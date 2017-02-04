@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Cheat Sheet</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">MC Production</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form class="navbar-form navbar-left">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search">
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Link</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li role="separator" class="divider"></li>
+                <li><a href="#">Separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+      <div class="jumbotron text-center">
+        <h1>Hello, world!</h1>
+        <p>The P Tag !</p>
+        <a href="#" class="btn btn-primary">Read More</a>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1 class="page-header">MC Production</h1>
+      <small>About Us</small>
+
+      <p class="lead">
+          We are a little indi studio located in Germany.
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      </div>
+      <hr>
+
+      <p class="text-left"> Left aligned text</p>
+      <p class="text-center"> Center aligned text</p>
+      <p class="text-right"> Right aligned text</p>
+      <p class="text-justify"> Justified aligned text</p>
+      <p class="text-nowrap"> No wrap text</p>
+
+      <div class="pull-right">Div floated right</div>
+      <div class="pull-left">Div floated left</div>
+      <div class="clearfix"></div>
+
+      <hr>
+
+      <blockquote cite="blockquote">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        <footer> By <cite title="Lasse Harm"> Lasse Harm</cite></footer>
+      </blockquote>
+
+      <hr>
+
+      <ul class="list-unstyled">
+        <li>Item One</li>
+        <li>Item Tow</li>
+        <li>Item Tree</li>
+        <li>Item Four</li>
+      </ul>
+
+      <ul class="list-inline">
+        <li>Item One</li>
+        <li>Item Tow</li>
+        <li>Item Tree</li>
+        <li>Item Four</li>
+      </ul>
+
+      <code>&lt;h1&gt; Heading Text&lt;/h1&gt</code>
+      <br>
+      Change directory with<kbd>cd</kbd>
+      <br>
+      To edit settings, press <kbd>ctrl</kbd> + <kbd>,</kbd>
+
+      <hr>
+
+      <p class="text-primary"> hello world</p>
+      <p class="text-success"> hello world</p>
+      <p class="text-info"> hello world</p>
+      <p class="text-warning"> hello world</p>
+      <p class="text-danger"> hello world</p>
+      <p class="text-muted"> hello world</p>
+
+      <p class="bg-primary"> hello world</p>
+      <p class="bg-success"> hello world</p>
+      <p class="bg-info"> hello world</p>
+      <p class="bg-warning"> hello world</p>
+      <p class="bg-danger"> hello world</p>
+      <p class="bg-muted"> hello world</p>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <button class="btn btn-default"type="button" name="button">Default</button>
+      <a href="#" class="btn btn-default" role="button" >Default Link</a>
+      <input class="btn btn-default"type="submit" name="submitButton" value="Default Sumbit">
+
+      <button class="btn btn-primary"type="button" name="button">Default</button>
+      <button class="btn btn-success"type="button" name="button">Default</button>
+      <button class="btn btn-info"type="button" name="button">Default</button>
+      <button class="btn btn-warning"type="button" name="button">Default</button>
+      <button class="btn btn-danger"type="button" name="button">Default</button>
+      <button class="btn btn-link"type="button" name="button">Default</button>
+
+      <br>
+
+      <button class="btn btn-primary btn-lg"type="button" name="button">Default</button>
+      <button class="btn btn-success"type="button" name="button">Default</button>
+      <button class="btn btn-info btn-sm"type="button" name="button">Default</button>
+      <button class="btn btn-warning btn-xs"type="button" name="button">Default</button>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+          <label>Labelname</label>
+          <input class="form-control" type="text" name="" value="" placeholder="placeholder">
+        </div>
+
+        <div class="form-group">
+          <label>Labelname</label>
+          <input class="form-control" type="email" name="" value="" placeholder="placeholder">
+        </div>
+
+        <div class="form-group">
+          <label>Labelname</label>
+          <textarea class="form-control" type="text" name="" value="" placeholder="placeholder"></textarea>
+        </div>
+      </form>
+
+      <hr>
+
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+          <label>Gender</label>
+          <select class="form-control" name="">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+      </form>
+
+      <hr>
+
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+          <label>Upload File</label>
+          <input type="file">
+          <p class="help-block">Only png and jpg allowed</p>
+        </div>
+      </form>
+
+      <hr>
+
+      <form class="" action="index.html" method="post">
+        <div class="form-group">
+
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" name="" value=""> Check me out
+            </label>
+          </div>
+
+          <button class="btn btn-default" type="submit" name="button">Submit</button>
+        </div>
+      </form>
+
+      <hr>
+
+      <form class="form-inline" action="index.html" method="post">
+        <div class="form-group">
+          <label>Username</label>
+          <input class="form-control" type="text" name="" value="" placeholder="placeholder">
+        </div>
+
+        <div class="form-group">
+          <label>Password</label>
+          <input class="form-control" type="password" name="" value="" placeholder="placeholder">
+        </div>
+
+        <div class="form-group">
+        <input class="form-control" type="submit" name="" value="Sumbit">
+        </div>
+      </form>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <table class="table table-striped table-hover table-bordered">
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Age</th>
+        </tr>
+        <tr class="danger">
+          <td>Eve</td>
+          <td>Jackson</td>
+          <td>24</td>
+        </tr>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>34</td>
+        </tr>
+        <tr class="success">
+          <td>Stephanie</td>
+          <td>Landon</td>
+          <td>20</td>
+        </tr>
+        <tr>
+          <td>Mike</td>
+          <td>Johnsin</td>
+          <td>40</td>
+        </tr>
+      </table>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <ul class="list-group">
+        <li class="list-group-item">Item One</li>
+        <li class="list-group-item">Item Two</li>
+        <li class="list-group-item">Item Three</li>
+        <li class="list-group-item">Item Four</li>
+      </ul>
+
+      <ul class="list-group">
+        <a href="#" class="list-group-item">Item One</a>
+        <a href="#" class="list-group-item">Item Two</a>
+        <a href="#" class="list-group-item">Item Three</a>
+        <a href="#" class="list-group-item">Item Four</a>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Panel Title</h3>
+        </div>
+        <div class="panel-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="panel-footer">
+          Panel Footer
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="well">
+        Hallo World
+      </div>
+      <div class="well well-sm">
+        Hallo World
+      </div>
+      <div class="well well-lg">
+        Hallo World
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="alert alert-success">A Alert</div>
+      <div class="alert alert-info">A Alert</div>
+      <div class="alert alert-warning">A Alert</div>
+      <div class="alert alert-danger">A Alert</div>
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+          <span class="sr-only"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <span class="label label-default">Default</span>
+      <span class="label label-primary">Primary</span>
+      <span class="label label-info">Info</span>
+      <span class="label label-success">Success</span>
+      <span class="label label-warning">Warning</span>
+      <span class="label label-danger">Danger</span>
+
+    </div>
+
+    <hr>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="col-md-6">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+      </div>
+    </div>
+
+    <hr>
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  </body>
+</html>
