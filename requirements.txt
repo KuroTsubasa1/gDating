@@ -1,0 +1,15 @@
+beautifulsoup4==4.5.1
+click==6.7
+Flask==0.12
+Flask-SocketIO==2.8.2
+iso8601==0.1.11
+itsdangerous==0.24
+Jinja2==2.9.5
+MarkupSafe==0.23
+pymongo==3.3.0
+python-engineio==1.1.2
+python-socketio==1.6.3
+requests==2.11.1
+six==1.10.0
+Werkzeug==0.11.15
+youtube-dl==2016.4.6
