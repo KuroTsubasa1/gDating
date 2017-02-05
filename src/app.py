@@ -14,5 +14,9 @@ def hello_world():
 def indexOfGDating():
     return render_template("index.html")
 
+@app.route('/nhreader')
+def openNHentaiReader():
+    return render_template("nhentai/flex.html")
+
 if __name__ == '__main__':
     socketio.run(app)
