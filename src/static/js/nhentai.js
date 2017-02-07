@@ -23,9 +23,9 @@ function getNumberOfPages() {
   return pageNumber;
 }
 
-function generatePage() {
+function generatePage(test,pageFormat,pageNumber) {
 
-  var mangaNumber = getMangaNumber();
+  var mangaNumber = test;
 
   console.log(mangaNumber);
   /*
@@ -35,10 +35,10 @@ function generatePage() {
 
   var imgSource = "https://i.nhentai.net/galleries/" + mangaNumber + "/";
 
-  for (var i = 0; i < 400; i++) {
+  for (var i = 1; i < pageNumber; i++) {
 
     imgSource = "https://i.nhentai.net/galleries/" + mangaNumber + "/";
-    imgSource = imgSource + i + ".jpg"
+    imgSource = imgSource + i + "." +pageFormat;
     console.log(imgSource);
 
           $("#pagesStartHere")
@@ -52,20 +52,6 @@ function generatePage() {
           $("#pagesStartHere")
               .append($('<br>'))
           ;
-
-      imgSource = "https://i.nhentai.net/galleries/" + mangaNumber + "/";
-      imgSource = imgSource + i + ".png"
-      console.log(imgSource);
-          $("#pagesStartHere")
-              .append($('<img/>')
-                  .attr("src", imgSource)
-                  .addClass("con2-item2")
-                  .addClass("center-horizontal")
-              )
-          ;
-
-          $("#pagesStartHere")
-              .append($('<br>'))
-
+      console.log(pageFormat);
   }
 }

@@ -60,6 +60,16 @@
                 socket.emit('a', targetUrl);
             }
 
+             var socket = io.connect('http://' + document.domain + ':' + location.port);
+        socket.on('imgUrl', function (test) {
+            console.log(test);
+            console.log(test.data);
+            console.log(test.pageFormat);
+            mangaId = test.data;
+            pageFormat = test.pageFormat;
+            pageNumber = test.pageNumber
+            generatePage(mangaId,pageFormat,pageNumber);
+        })
 
 
         console.log("wuzaaa");
