@@ -1,6 +1,8 @@
 from flask import Flask
 from flask_socketio import SocketIO
 from flask import render_template
+import requests
+from flask_socketio import send, emit
 
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
@@ -17,6 +19,13 @@ def indexOfGDating():
 @app.route('/nhreader')
 def openNHentaiReader():
     return render_template("nhentai/flex.html")
+
+socketio.emit('connect')
+
+@socketio.on('a')
+def aa(json):
+    print("trest")
+    print(json)
 
 if __name__ == '__main__':
     socketio.run(app)

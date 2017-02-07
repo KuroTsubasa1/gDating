@@ -36,7 +36,7 @@
           <i class="fa fa-search fa-lg"></i>
         </button>
 
-        <button class="con1-item5 menumarging" type="submit" name="button" onclick="createPDF()">
+        <button class="con1-item5 menumarging" type="submit" name="button" onclick="test()">
           Downlaod
           <a href="http://www.web2pdfconvert.com/convert"></a>
         </button>
@@ -51,8 +51,21 @@
       </div>
 
 
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        function test() {
+            var socket = io.connect('http://' + document.domain + ':' + location.port);
+                var targetUrl = $(".con1-item3").val();
+                socket.emit('a', targetUrl);
+            }
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+
+        console.log("wuzaaa");
+
+    </script>
+
     <script src="../../static/js/jquery.printPage.js" type="text/javascript"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.0/material.indigo-pink.min.css">
