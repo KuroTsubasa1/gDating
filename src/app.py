@@ -48,7 +48,6 @@ def aa(json):
 def num_apperances_of_tag(tag_name, html):
     soup = BeautifulSoup(html, "html.parser")
     return len(soup.find_all(tag_name))
-    #print(json)
-    # https://nhentai.net/g/187201/1/
+
 if __name__ == '__main__':
     socketio.run(app)

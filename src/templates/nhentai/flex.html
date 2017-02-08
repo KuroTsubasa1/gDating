@@ -77,8 +77,8 @@
                 socket.emit('a', targetUrl);
             }
 
-             var socket = io.connect('http://' + document.domain + ':' + location.port);
-        socket.on('imgUrl', function (test) {
+            var socket = io.connect('http://' + document.domain + ':' + location.port);
+            socket.on('imgUrl', function (test) {
             console.log(test);
             console.log(test.data);
             console.log(test.pageFormat);
@@ -88,10 +88,15 @@
             generatePage(mangaId,pageFormat,pageNumber);
         })
 
+         socket.on('connect', function() {
+            console.log("test");
+         });
+
          function checkTextField(field) {
-            if (field.value != '') {
-            test();
-        }
+             if (field.value != '') {
+                 test();
+             }
+
 }
 
         console.log("wuzaaa");
