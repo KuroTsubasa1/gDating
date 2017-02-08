@@ -21,6 +21,10 @@ def indexOfGDating():
 def openNHentaiReader():
     return render_template("nhentai/flex.html")
 
+@app.route('/info')
+def info():
+    return render_template("info.html")
+
 socketio.emit('connect')
 
 @socketio.on('a')

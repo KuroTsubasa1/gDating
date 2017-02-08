@@ -106,6 +106,19 @@ background-color:  #f15478;
   color: #fff;
 }
 
+.con1-item7
+{
+  position: fixed;
+  right: 20px;
+  bottom: 80px;
+  background-color: #ed2553;
+  height:50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 0;
+  color: #fff;
+}
+
 .con1-item6:hover
 {
 background-color:  #f15478;
