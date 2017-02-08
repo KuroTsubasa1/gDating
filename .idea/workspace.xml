@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2281b3ae-0d2d-489d-9272-4d73e7841517" name="Default" comment="" />
+    <list default="true" id="2281b3ae-0d2d-489d-9272-4d73e7841517" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/nhentai/flex.html" afterPath="$PROJECT_DIR$/src/templates/nhentai/flex.html" />
+    </list>
     <ignored path="GDating.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -43,8 +45,8 @@
       <file leaf-file-name="flex.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+            <state relative-caret-position="189">
+              <caret line="33" column="98" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
               <folding />
             </state>
           </provider>
@@ -755,8 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="59" column="54" selection-start-line="59" selection-start-column="54" selection-end-line="59" selection-end-column="54" />
+        <state relative-caret-position="189">
+          <caret line="33" column="98" selection-start-line="33" selection-start-column="98" selection-end-line="33" selection-end-column="98" />
           <folding />
         </state>
       </provider>
