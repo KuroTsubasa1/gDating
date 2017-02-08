@@ -25,8 +25,6 @@ def openNHentaiReader():
 def info():
     return render_template("info.html")
 
-socketio.emit('connect')
-
 @socketio.on('a')
 def aa(json):
     request = requests.get(json)
