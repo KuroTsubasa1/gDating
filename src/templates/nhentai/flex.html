@@ -60,6 +60,8 @@
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8">
 
+       // var socket = io.connect('http://' + document.domain + ':' + location.port);
+       var socket = io.connect('http://' + '139.59.147.213' + ':' + location.port);
          $(document).ready(function() {
             $('.fancybox').fancybox();
         });
@@ -72,12 +74,10 @@
          }
 
         function test() {
-            var socket = io.connect('http://' + document.domain + ':' + location.port);
                 var targetUrl = $(".con1-item3").val();
                 socket.emit('a', targetUrl);
             }
 
-            var socket = io.connect('http://' + document.domain + ':' + location.port);
             socket.on('imgUrl', function (test) {
             console.log(test);
             console.log(test.data);
@@ -97,7 +97,6 @@
                  test();
              }
 
-}
 
         console.log("wuzaaa");
 
