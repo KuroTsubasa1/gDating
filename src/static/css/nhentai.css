@@ -119,7 +119,30 @@ background-color:  #f15478;
   color: #fff;
 }
 
+.con1-item8
+{
+  position: fixed;
+  right: 20px;
+  bottom: 140px;
+  background-color: #ed2553;
+  height:50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 0;
+  color: #fff;
+}
+
 .con1-item6:hover
+{
+background-color:  #f15478;
+}
+
+.con1-item7:hover
+{
+background-color:  #f15478;
+}
+
+.con1-item8:hover
 {
 background-color:  #f15478;
 }
@@ -149,4 +172,8 @@ background-color:  #f15478;
 .con2-item3
 {
   order: 3;
+}
+
+.hidden{
+  visibility: hidden;
 }

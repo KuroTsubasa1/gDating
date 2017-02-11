@@ -48,6 +48,14 @@
           <button class="con1-item7" type="submit" name="button" id="item7" onclick="openFancyBox()">
             <i class="fa fa-question-circle-o fa-lg" aria-hidden="true"></i>
           </button>
+
+          <button class="con1-item8" type="submit" name="button" id="item8" onclick="onClickAutoScroll()">
+            <i class="fa fa-arrow-circle-down" aria-hidden="true"></i>
+          </button>
+
+          <button class="con1-item8 hidden" type="submit" name="button" id="item9" onclick="onClickStopAutoScroll()">
+            <i class="fa fa-stop-circle-o" aria-hidden="true"></i>
+          </button>
       </div>
 
       <div id="pagesStartHere">
@@ -96,6 +104,26 @@
                  test();
              }
              }
+        
+        var srollHeight = 0;
+        var interval;
+        function scrollScreen() {
+            srollHeight = srollHeight + 1;
+            scroll(0,srollHeight);
+        }
+        
+        function onClickAutoScroll() {
+            interval = setInterval(function(){scrollScreen()},10);
+            console.log("test");
+            $( "#item9" ).removeClass( "hidden" );
+            $( "#item8" ).addClass( "hidden" );
+        }
+
+         function onClickStopAutoScroll() {
+            clearInterval(interval);
+             $( "#item8" ).removeClass( "hidden" );
+            $( "#item9" ).addClass( "hidden" );
+        }
 
         console.log("wuzaaa");
 
