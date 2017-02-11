@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2281b3ae-0d2d-489d-9272-4d73e7841517" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/css/nhentai.css" afterPath="$PROJECT_DIR$/src/static/css/nhentai.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/dummy.html" afterPath="$PROJECT_DIR$/src/templates/dummy.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/nhentai/flex.html" afterPath="$PROJECT_DIR$/src/templates/nhentai/flex.html" />
     </list>
     <ignored path="GDating.iws" />
@@ -17,7 +17,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/gDating$GDating__1_.coverage" NAME="GDating (1) Coverage Results" MODIFIED="1486269170693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gDating" />
-    <SUITE FILE_PATH="coverage/gDating$app.coverage" NAME="app Coverage Results" MODIFIED="1486776255305" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/gDating$app.coverage" NAME="app Coverage Results" MODIFIED="1486816934213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/gDating$GDating.coverage" NAME="GDating Coverage Results" MODIFIED="1486235320557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/gDating$run.coverage" NAME="run Coverage Results" MODIFIED="1486290780674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/GDating$GDating.coverage" NAME="GDating Coverage Results" MODIFIED="1485891331011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -46,8 +46,8 @@
       <file leaf-file-name="flex.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+            <state relative-caret-position="462">
+              <caret line="128" column="44" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
               <folding />
             </state>
           </provider>
@@ -758,8 +758,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="116" column="32" selection-start-line="116" selection-start-column="32" selection-end-line="116" selection-end-column="32" />
+        <state relative-caret-position="462">
+          <caret line="128" column="44" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
           <folding />
         </state>
       </provider>

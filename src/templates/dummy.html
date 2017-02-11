@@ -82,8 +82,18 @@ var srollHeight = 0;
 
 function a()
 {
-  srollHeight = srollHeight + 10;
-  scroll(0,srollHeight)
+  srollHeight = srollHeight + 1;
+  scroll(0,srollHeight);
 }
 
-setInterval(function{a()},1000);
+var interval = setInterval(function(){a()},10);
+
+addEvent(document, "keypress", function (e) {
+    e = e || window.event;
+    // use e.keyCode
+  clearInterval(interval)
+});
+
+window.onscroll = function (e) {
+ srollHeight = document.body.scrollLeft;
+}
