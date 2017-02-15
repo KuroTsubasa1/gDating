@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2281b3ae-0d2d-489d-9272-4d73e7841517" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/dummy.html" afterPath="$PROJECT_DIR$/src/templates/dummy.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/nhentai/flex.html" afterPath="$PROJECT_DIR$/src/templates/nhentai/flex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/css/nhentai.css" afterPath="$PROJECT_DIR$/src/static/css/nhentai.css" />
     </list>
     <ignored path="GDating.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +16,7 @@
   </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/gDating$GDating__1_.coverage" NAME="GDating (1) Coverage Results" MODIFIED="1486269170693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gDating" />
-    <SUITE FILE_PATH="coverage/gDating$app.coverage" NAME="app Coverage Results" MODIFIED="1486816934213" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/gDating$app.coverage" NAME="app Coverage Results" MODIFIED="1486819771794" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/gDating$GDating.coverage" NAME="GDating Coverage Results" MODIFIED="1486235320557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/gDating$run.coverage" NAME="run Coverage Results" MODIFIED="1486290780674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/GDating$GDating.coverage" NAME="GDating Coverage Results" MODIFIED="1485891331011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
@@ -43,7 +42,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="flex.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="flex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
@@ -53,11 +52,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nhentai.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="nhentai.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/static/css/nhentai.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+            <state relative-caret-position="63">
+              <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -66,7 +65,7 @@
       <file leaf-file-name="nhentai.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/static/js/nhentai.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-285">
+            <state relative-caret-position="315">
               <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
               <folding />
             </state>
@@ -108,8 +107,8 @@
         <option value="$PROJECT_DIR$/src/nhentaiDownloader.py" />
         <option value="$PROJECT_DIR$/src/static/js/nhentai.js" />
         <option value="$PROJECT_DIR$/src/app.py" />
-        <option value="$PROJECT_DIR$/src/static/css/nhentai.css" />
         <option value="$PROJECT_DIR$/src/templates/nhentai/flex.html" />
+        <option value="$PROJECT_DIR$/src/static/css/nhentai.css" />
       </list>
     </option>
   </component>
@@ -636,7 +635,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18634886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18634886" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21776815" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -740,9 +739,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="128" column="44" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/static/js/nhentai.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
+        <state relative-caret-position="315">
           <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding />
         </state>
@@ -750,16 +757,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/static/css/nhentai.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="128" column="44" selection-start-line="128" selection-start-column="44" selection-end-line="128" selection-end-column="44" />
+        <state relative-caret-position="63">
+          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
           <folding />
         </state>
       </provider>
