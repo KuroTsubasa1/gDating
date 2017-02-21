@@ -7,8 +7,9 @@
     <title>Mc Productions</title>
 
     <link rel="stylesheet" href="../static/css/master.css">
+
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -45,19 +46,6 @@
       </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="spacer">
-
-    </div>
-
-  <div class="container">
-      <p class="lead">Ich bin eine Website</p>
-      <p>und ich liebe Trance !!!</p>
-      <p>Partey !</p>
-      <p>Partey !</p>
-      <p>Partey !</p>
-      <p>Partey !</p>
-  </div>
-
       <footer class="footer">
         <div class="container">
 
@@ -77,23 +65,3 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
-
-var srollHeight = 0;
-
-function a()
-{
-  srollHeight = srollHeight + 1;
-  scroll(0,srollHeight);
-}
-
-var interval = setInterval(function(){a()},10);
-
-addEvent(document, "keypress", function (e) {
-    e = e || window.event;
-    // use e.keyCode
-  clearInterval(interval)
-});
-
-window.onscroll = function (e) {
- srollHeight = document.body.scrollLeft;
-}

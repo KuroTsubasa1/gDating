@@ -25,12 +25,15 @@ def openNHentaiReader():
 def info():
     return render_template("info.html")
 
+@app.route('/register')
+def register():
+    return render_template("register.html")
+
 @socketio.on('a')
 def aa(json):
     request = requests.get(json)
     content = request.content
     soup = BeautifulSoup(content, "html.parser")
-    #element = soup.find("img", {"class": "lazyload"})['src']
     elements = soup.find('img', {'class':'lazyload'})['data-src']
     print(elements)
     pattern = '/'
