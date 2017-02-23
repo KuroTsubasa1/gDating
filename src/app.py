@@ -11,7 +11,7 @@ socketio = SocketIO(app)
 
 @app.route('/')
 def hello_world():
-    return render_template("index.html")
+    return render_template("index_no_template.html")
 
 @app.route('/gdating/')
 def indexOfGDating():
