@@ -5,14 +5,18 @@ import requests
 from flask_socketio import send, emit
 from bs4 import BeautifulSoup
 
+# init the flask server
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
+# init websokets (what a pain)
 socketio = SocketIO(app)
 
+#index page
 @app.route('/')
 def hello_world():
     return render_template("index_no_template.html")
 
+# index page of gdatind (ht)
 @app.route('/gdating/')
 def indexOfGDating():
     return render_template("index.html")
@@ -29,6 +33,7 @@ def info():
 def register():
     return render_template("register.html")
 
+# this should not be here but i am too lazy to move it
 @socketio.on('a')
 def aa(json):
     request = requests.get(json)
@@ -47,6 +52,7 @@ def aa(json):
     pageNum = pageNum - 3
     print(pageNum)
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
+
 
 def num_apperances_of_tag(tag_name, html):
     soup = BeautifulSoup(html, "html.parser")
