@@ -33,6 +33,10 @@ def info():
 def register():
     return render_template("register.html")
 
+@app.route('/blog')
+def blog():
+    return render_template("blog/blog.html")
+
 # this should not be here but i am too lazy to move it
 @socketio.on('a')
 def aa(json):
