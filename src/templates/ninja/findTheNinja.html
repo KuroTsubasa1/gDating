@@ -1,0 +1,14 @@
+zzgl. Versandkosten (netto)**: {$vOrder->getFreightCosts()|number_format:2:",":"."} &euro;<br/>
+zzgl. 7% MwSt. Tiernahrung: {$vAllAroundMwSt|number_format:2:",":"."} &euro;<br/>
+zzgl. 19% MwSt. : {$vAllAroundMwSt19|number_format:2:",":"."} &euro;<br/>
+zzgl. 19% MwSt. Versandkosten: {$vAdditionalMwSt19|number_format:2:",":"."} &euro;<br/>
+zzgl. 7% MwSt. Versandkosten: {$vAdditionalMwSt7|number_format:2:",":"."} &euro;<br/>
+
+
+
+$vAdditionalMwSt7 = round((((100/$vTotalPrice2)*$vPriceFood)/100) * $vFreightCosts * 0.07,2);
+$vAdditionalMwSt19 = round((((100/$vTotalPrice2)*$vPriceNonFood)/100) * $vFreightCosts * 0.19,2);
+
+
+$this->_template->assign('vAdditionalMwSt7', $vAdditionalMwSt7);
+$this->_template->assign('vAdditionalMwSt19', $vAdditionalMwSt19);

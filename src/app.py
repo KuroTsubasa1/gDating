@@ -4,12 +4,20 @@ from flask import render_template
 import requests
 from flask_socketio import send, emit
 from bs4 import BeautifulSoup
+import mysql.connector
 
 # init the flask server
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'secret!'
 # init websokets (what a pain)
 socketio = SocketIO(app)
+
+# mysql stuff
+cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
+                              host='127.0.0.1',
+                              database='testDatabase')
+cursor = cnx.cursor()
+
 
 #index page
 @app.route('/')
@@ -36,6 +44,12 @@ def register():
 @app.route('/blog')
 def blog():
     return render_template("blog/blog.html")
+
+@app.route('/sqltest')
+def sqlTest():
+    valueData = ("INSERT INTO testTable value VALUES {} ").format('Hallo Welt')
+    cursor.execute(valueData)
+    return render_template("sqlTest.html")
 
 # this should not be here but i am too lazy to move it
 @socketio.on('a')
