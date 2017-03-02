@@ -12,6 +12,7 @@ app.config['SECRET_KEY'] = 'secret!'
 # init websokets (what a pain)
 socketio = SocketIO(app)
 
+#GEkyX4KFcZH!
 # mysql stuff
 cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
                               host='127.0.0.1',
@@ -45,9 +46,14 @@ def register():
 def blog():
     return render_template("blog/blog.html")
 
-@app.route('/sqltest')
+@app.route('/sqlTest')
 def sqlTest():
-    valueData = ("INSERT INTO testTable value VALUES {} ").format('Hallo Welt')
+    tableName = 'testTable'
+    Fields = 'value'
+    Data = "'Hallo Welt'"
+    Data2 = 2
+    print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
+    valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
     cursor.execute(valueData)
     return render_template("sqlTest.html")
 
