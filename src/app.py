@@ -56,6 +56,7 @@ def sqlTest():
     valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
     cursor.execute(valueData)
     cursor.close()
+    cnx.close
     return render_template("sqlTest.html")
 
 # this should not be here but i am too lazy to move it
