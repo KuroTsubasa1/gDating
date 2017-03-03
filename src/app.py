@@ -13,29 +13,40 @@ app.config['SECRET_KEY'] = 'secret!'
 # init websokets (what a pain)
 socketio = SocketIO(app)
 
-#GEkyX4KFcZH!
-# mysql stuff
-try:
-    cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
-                                 host='127.0.0.1',
-                                 database='testDatabase')
-    print("SQL : All Good")
-    cursor = cnx.cursor()
-except mysql.connector.Error as err:
-  if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-    print("SQL : Something is wrong with your user name or password")
-  elif err.errno == errorcode.ER_BAD_DB_ERROR:
-    print("SQL : Database does not exist")
-  else:
-    print(err)
 
 
+def connectDB():
+    # GEkyX4KFcZH!
+    # mysql stuff
+    try:
+        cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
+                                      host='127.0.0.1',
+                                      database='testDatabase')
+        print('')
+        print("SQL : All Good")
+        print('')
+        cursor = cnx.cursor()
+        return cursor
+    except mysql.connector.Error as err:
+        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
+            print('')
+            print("SQL : Something is wrong with your user name or password")
+            print('')
+        elif err.errno == errorcode.ER_BAD_DB_ERROR:
+            print('')
+            print("SQL : Database does not exist")
+            print('')
+        else:
+            print('')
+            print(err)
+            print('')
 
 #index page
 @app.route('/')
 def hello_world():
-    print('---------------------------')
+    print('')
     print('test')
+    print('')
     return render_template("index_no_template.html")
 
 # index page of gdatind (ht)
@@ -61,6 +72,7 @@ def blog():
 
 @app.route('/sqlTest')
 def sqlTest():
+    cursor = connectDB()
     tableName = 'testTable'
     Fields = 'value'
     Data = "'Hallo Welt'"
