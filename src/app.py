@@ -46,16 +46,16 @@ def register():
 def blog():
     return render_template("blog/blog.html")
 
-#@app.route('/sqlTest')
-#def sqlTest():
-#    tableName = 'testTable'
-#    Fields = 'value'
-#    Data = "'Hallo Welt'"
-#    Data2 = 2
-#    print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
-#    valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
-#    cursor.execute(valueData)
-#    return render_template("sqlTest.html")
+@app.route('/sqlTest')
+def sqlTest():
+    tableName = 'testTable'
+    Fields = 'value'
+    Data = "'Hallo Welt'"
+    Data2 = 2
+    print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
+    valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
+    cursor.execute(valueData)
+    return render_template("sqlTest.html")
 
 # this should not be here but i am too lazy to move it
 @socketio.on('a')
