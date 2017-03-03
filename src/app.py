@@ -28,8 +28,7 @@ except mysql.connector.Error as err:
     print("SQL : Database does not exist")
   else:
     print(err)
-else:
-  cnx.close()
+
 
 
 #index page
