@@ -55,9 +55,6 @@ def sqlTest():
     print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
     valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
     cursor.execute(valueData)
-
-    valueData = ("CREATE TABLE lasseTable (PersonID int,Firstname varchar(255),LastName varchar(255))")
-    cursor.execute(valueData)
     cursor.close()
     return render_template("sqlTest.html")
 
