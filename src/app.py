@@ -5,6 +5,7 @@ import requests
 from flask_socketio import send, emit
 from bs4 import BeautifulSoup
 import mysql.connector
+from mysql.connector import errorcode
 
 # init the flask server
 app = Flask(__name__)
@@ -14,10 +15,20 @@ socketio = SocketIO(app)
 
 #GEkyX4KFcZH!
 # mysql stuff
-cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
-                             host='127.0.0.1',
-                             database='testDatabase')
-cursor = cnx.cursor()
+try:
+    cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
+                                 host='127.0.0.1',
+                                 database='testDatabase')
+    cursor = cnx.cursor()
+except mysql.connector.Error as err:
+  if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
+    print("Something is wrong with your user name or password")
+  elif err.errno == errorcode.ER_BAD_DB_ERROR:
+    print("Database does not exist")
+  else:
+    print(err)
+else:
+  cnx.close()
 
 
 #index page
