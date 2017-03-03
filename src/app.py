@@ -23,6 +23,8 @@ cursor = cnx.cursor()
 #index page
 @app.route('/')
 def hello_world():
+    print('---------------------------')
+    print('test')
     return render_template("index_no_template.html")
 
 # index page of gdatind (ht)
