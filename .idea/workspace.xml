@@ -33,12 +33,15 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+            <state relative-caret-position="438">
+              <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1488558730000" expanded="true" signature="2155:2186" ph="INSERT INTO missing_value... " />
-                <marker date="1488558730000" expanded="true" signature="2239:2270" ph="INSERT INTO missing_value... " />
+                <marker date="1488559251000" expanded="true" signature="1325:1356" ph="INSERT INTO missing_value... " />
+                <marker date="1488559251000" expanded="true" signature="1409:1440" ph="INSERT INTO missing_value... " />
+                <marker date="1488559251000" expanded="true" signature="1524:1562" ph="CREATE TABLE... lasseTable" />
+                <marker date="1488559251000" expanded="true" signature="1524:1607" ph="CREATE TABLE... lasseTable" />
+                <marker date="1488559251000" expanded="true" signature="1524:1609" ph="CREATE TABLE... lasseTable" />
               </folding>
             </state>
           </provider>
@@ -584,8 +587,11 @@
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488558730000" expanded="true" signature="2155:2186" ph="INSERT INTO missing_value... " />
-            <marker date="1488558730000" expanded="true" signature="2239:2270" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1325:1356" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1409:1440" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1524:1562" ph="CREATE TABLE... lasseTable" />
+            <marker date="1488559251000" expanded="true" signature="1524:1607" ph="CREATE TABLE... lasseTable" />
+            <marker date="1488559251000" expanded="true" signature="1524:1609" ph="CREATE TABLE... lasseTable" />
           </folding>
         </state>
       </provider>
@@ -628,8 +634,11 @@
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488558730000" expanded="true" signature="2155:2186" ph="INSERT INTO missing_value... " />
-            <marker date="1488558730000" expanded="true" signature="2239:2270" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1325:1356" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1409:1440" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1524:1562" ph="CREATE TABLE... lasseTable" />
+            <marker date="1488559251000" expanded="true" signature="1524:1607" ph="CREATE TABLE... lasseTable" />
+            <marker date="1488559251000" expanded="true" signature="1524:1609" ph="CREATE TABLE... lasseTable" />
           </folding>
         </state>
       </provider>
@@ -712,12 +721,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="76" column="25" selection-start-line="76" selection-start-column="25" selection-end-line="76" selection-end-column="25" />
+        <state relative-caret-position="438">
+          <caret line="59" column="29" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="29" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488558730000" expanded="true" signature="2155:2186" ph="INSERT INTO missing_value... " />
-            <marker date="1488558730000" expanded="true" signature="2239:2270" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1325:1356" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1409:1440" ph="INSERT INTO missing_value... " />
+            <marker date="1488559251000" expanded="true" signature="1524:1562" ph="CREATE TABLE... lasseTable" />
+            <marker date="1488559251000" expanded="true" signature="1524:1607" ph="CREATE TABLE... lasseTable" />
+            <marker date="1488559251000" expanded="true" signature="1524:1609" ph="CREATE TABLE... lasseTable" />
           </folding>
         </state>
       </provider>

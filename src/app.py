@@ -13,33 +13,6 @@ app.config['SECRET_KEY'] = 'secret!'
 # init websokets (what a pain)
 socketio = SocketIO(app)
 
-
-def connectDB():
-    # GEkyX4KFcZH!
-    # mysql stuff
-    try:
-        cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
-                                      host='127.0.0.1',
-                                      database='testDatabase')
-        print('')
-        print("SQL : All Good")
-        print('')
-        cursor = cnx.cursor()
-        return cursor
-    except mysql.connector.Error as err:
-        if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
-            print('')
-            print("SQL : Something is wrong with your user name or password")
-            print('')
-        elif err.errno == errorcode.ER_BAD_DB_ERROR:
-            print('')
-            print("SQL : Database does not exist")
-            print('')
-        else:
-            print('')
-            print(err)
-            print('')
-
 #index page
 @app.route('/')
 def hello_world():
@@ -81,6 +54,9 @@ def sqlTest():
     Data2 = 2
     print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
     valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
+    cursor.execute(valueData)
+
+    valueData = ("CREATE TABLE lasseTable (PersonID int,Firstname varchar(255),LastName varchar(255))")
     cursor.execute(valueData)
     cursor.close()
     return render_template("sqlTest.html")
