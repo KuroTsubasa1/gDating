@@ -14,10 +14,10 @@ socketio = SocketIO(app)
 
 #GEkyX4KFcZH!
 # mysql stuff
-#cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
-#                             host='127.0.0.1',
-#                             database='testDatabase')
-#cursor = cnx.cursor()
+cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
+                             host='127.0.0.1',
+                             database='testDatabase')
+cursor = cnx.cursor()
 
 
 #index page
