@@ -13,7 +13,7 @@ app.config['SECRET_KEY'] = 'secret!'
 # init websokets (what a pain)
 socketio = SocketIO(app)
 
-
+cnx ="";
 
 def connectDB():
     # GEkyX4KFcZH!
