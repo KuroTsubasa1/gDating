@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2281b3ae-0d2d-489d-9272-4d73e7841517" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/app.py" afterPath="$PROJECT_DIR$/src/app.py" />
-    </list>
+    <list default="true" id="2281b3ae-0d2d-489d-9272-4d73e7841517" name="Default" comment="" />
     <ignored path="GDating.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -33,7 +31,7 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
+            <state relative-caret-position="255">
               <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
@@ -47,7 +45,7 @@
       <file leaf-file-name="flex.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1650">
+            <state relative-caret-position="54">
               <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
               <folding />
             </state>
@@ -67,7 +65,7 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/templates/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="585">
+            <state relative-caret-position="555">
               <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
               <folding />
             </state>
@@ -686,21 +684,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488555918000" expanded="true" signature="1253:1284" ph="INSERT INTO missing_value... " />
-            <marker date="1488555918000" expanded="true" signature="1337:1368" ph="INSERT INTO missing_value... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/nhentai/flex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1650">
+        <state relative-caret-position="54">
           <caret line="110" column="42" selection-start-line="110" selection-start-column="42" selection-end-line="110" selection-end-column="42" />
           <folding />
         </state>
@@ -716,9 +702,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/templates/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
+        <state relative-caret-position="555">
           <caret line="39" column="29" selection-start-line="39" selection-start-column="29" selection-end-line="39" selection-end-column="29" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="57" column="42" selection-start-line="57" selection-start-column="42" selection-end-line="57" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+            <marker date="1488555918000" expanded="true" signature="1253:1284" ph="INSERT INTO missing_value... " />
+            <marker date="1488555918000" expanded="true" signature="1337:1368" ph="INSERT INTO missing_value... " />
+          </folding>
         </state>
       </provider>
     </entry>
