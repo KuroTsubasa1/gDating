@@ -13,7 +13,6 @@ app.config['SECRET_KEY'] = 'secret!'
 # init websokets (what a pain)
 socketio = SocketIO(app)
 
-cnx ="";
 
 def connectDB():
     # GEkyX4KFcZH!
@@ -72,7 +71,10 @@ def blog():
 
 @app.route('/sqlTest')
 def sqlTest():
-    cursor = connectDB()
+    cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
+                                  host='127.0.0.1',
+                                  database='testDatabase')
+    cursor = cnx.cursor()
     tableName = 'testTable'
     Fields = 'value'
     Data = "'Hallo Welt'"
