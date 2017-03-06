@@ -78,15 +78,16 @@ def aa(json):
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
 
 def executeSql(sql):
-    print(os.getcwd()+'config.conf')
+    print(os.getcwd()+'/config.conf')
     words =""
-    with open('/var/www/html/test/gDating/src/config.conf', 'r') as f:
+    with open(os.getcwd()+'/config.conf', 'r') as f:
         data = f.readlines()
+        print(data)
         for line in data:
-            words = line.split()
-            print("")
-            print("DEBUG: " + words)
-            print("")
+            words = line.split(':')
+            #print("")
+            #print("DEBUG: " + words)
+            #print("")
 
     # connecting to db
     cnx = mysql.connector.connect(user=words[0], password=words[1],

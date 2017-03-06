@@ -17,7 +17,7 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/gDating$run.coverage" NAME="run Coverage Results" MODIFIED="1486290780674" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/gDating$GDating__1_.coverage" NAME="GDating (1) Coverage Results" MODIFIED="1486269170693" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/gDating" />
-    <SUITE FILE_PATH="coverage/gDating$app.coverage" NAME="app Coverage Results" MODIFIED="1488451922714" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/gDating$app.coverage" NAME="app Coverage Results" MODIFIED="1488795279048" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
     <SUITE FILE_PATH="coverage/gDating$GDating.coverage" NAME="GDating Coverage Results" MODIFIED="1486235320557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/GDating$GDating.coverage" NAME="GDating Coverage Results" MODIFIED="1485891331011" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
@@ -33,13 +33,23 @@
       <file leaf-file-name="app.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/app.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+            <state relative-caret-position="375">
+              <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1488794778000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
-                <marker date="1488794778000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
+                <marker date="1488795301000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
+                <marker date="1488795301000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="config.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/config.conf">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -100,6 +110,7 @@
         <option value="$PROJECT_DIR$/src/templates/nhentai/flex.html" />
         <option value="$PROJECT_DIR$/src/static/css/nhentai.css" />
         <option value="$PROJECT_DIR$/src/templates/index.html" />
+        <option value="$PROJECT_DIR$/src/config.conf" />
         <option value="$PROJECT_DIR$/src/app.py" />
       </list>
     </option>
@@ -584,8 +595,8 @@
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488794778000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
-            <marker date="1488794778000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
+            <marker date="1488795301000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
+            <marker date="1488795301000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
@@ -628,8 +639,8 @@
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488794778000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
-            <marker date="1488794778000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
+            <marker date="1488795301000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
+            <marker date="1488795301000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
@@ -710,14 +721,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/config.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="87" column="23" selection-start-line="87" selection-start-column="23" selection-end-line="87" selection-end-column="23" />
+        <state relative-caret-position="375">
+          <caret line="82" column="52" selection-start-line="82" selection-start-column="52" selection-end-line="82" selection-end-column="52" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488794778000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
-            <marker date="1488794778000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
+            <marker date="1488795301000" expanded="true" signature="1127:1158" ph="INSERT INTO missing_value... " />
+            <marker date="1488795301000" expanded="true" signature="1211:1242" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
