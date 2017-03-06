@@ -6,6 +6,7 @@ from flask_socketio import send, emit
 from bs4 import BeautifulSoup
 import mysql.connector
 from mysql.connector import errorcode
+import os
 
 # init the flask server
 app = Flask(__name__)
@@ -77,9 +78,9 @@ def aa(json):
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
 
 def executeSql(sql):
-
+    print(os.getcwd()+'config.conf')
     words =""
-    with open('/var/www/html/test/gDating/config.conf', 'r') as f:
+    with open(os.getcwd()+'config.conf', 'r') as f:
         data = f.readlines()
         for line in data:
             words = line.split()
