@@ -48,8 +48,7 @@ def sqlTest():
 
     tableName = 'testTable'
     Fields = 'value'
-    Data = "'Hallo Welt'"
-    Data2 = 2
+    Data = "'Lasse'"
     print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
     valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
 
@@ -96,10 +95,13 @@ def executeSql(sql):
     cursor = cnx.cursor()
 
     # run sql
+    print('sql: '+sql)
     cursor.execute(sql)
-    cursor.close()
-    cnx.close
 
+    cnx.commit()
+
+    cursor.close()
+    cnx.close()
 
 def num_apperances_of_tag(tag_name, html):
     soup = BeautifulSoup(html, "html.parser")
