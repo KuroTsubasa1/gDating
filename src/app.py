@@ -84,6 +84,9 @@ def executeSql(sql):
         data = f.readlines()
         for line in data:
             words = line.split()
+            print("")
+            print("DEBUG: " + words)
+            print("")
 
     # connecting to db
     cnx = mysql.connector.connect(user=words[0], password=words[1],
