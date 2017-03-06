@@ -78,7 +78,8 @@ def aa(json):
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
 
 def executeSql(sql):
-    print(os.path.dirname(os.path.abspath(__file__)))
+
+    # read config.conf for sql server
     path = os.path.dirname(os.path.abspath(__file__))
     words =""
     with open(path+'/config.conf', 'r') as f:
@@ -87,12 +88,6 @@ def executeSql(sql):
         i = 0
         for line in data:
             words = line.split(':')
-            print(i)
-            i = i + 1
-            print(len(words))
-            #print("")
-            #print("DEBUG: " + words)
-            #print("")
 
     # connecting to db
     cnx = mysql.connector.connect(user=words[0], password=words[1],
