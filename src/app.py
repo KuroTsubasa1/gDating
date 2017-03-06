@@ -44,19 +44,16 @@ def blog():
 
 @app.route('/sqlTest')
 def sqlTest():
-    cnx = mysql.connector.connect(user='root', password='GEkyX4KFcZH!',
-                                  host='127.0.0.1',
-                                  database='testDatabase')
-    cursor = cnx.cursor()
+
     tableName = 'testTable'
     Fields = 'value'
     Data = "'Hallo Welt'"
     Data2 = 2
     print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
     valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
-    cursor.execute(valueData)
-    cursor.close()
-    cnx.close
+
+    executeSql(valueData)
+
     return render_template("sqlTest.html")
 
 # this should not be here but i am too lazy to move it
@@ -78,6 +75,25 @@ def aa(json):
     pageNum = pageNum - 3
     print(pageNum)
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
+
+def executeSql(sql):
+
+    words =""
+    with open('config.conf', 'r') as f:
+        data = f.readlines()
+        for line in data:
+            words = line.split()
+
+    # connecting to db
+    cnx = mysql.connector.connect(user=words[0], password=words[1],
+                                  host=words[2],
+                                  database=words[3])
+    cursor = cnx.cursor()
+
+    # run sql
+    cursor.execute(sql)
+    cursor.close()
+    cnx.close
 
 
 def num_apperances_of_tag(tag_name, html):
