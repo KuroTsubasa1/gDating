@@ -80,7 +80,7 @@ def aa(json):
 def executeSql(sql):
     print(os.getcwd()+'/config.conf')
     words =""
-    with open(os.getcwd()+'/config.conf', 'r') as f:
+    with open(os.getcwd()+'config.conf', 'r') as f:
         data = f.readlines()
         print(data)
         for line in data:
