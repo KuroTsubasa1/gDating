@@ -79,7 +79,7 @@ def aa(json):
 def executeSql(sql):
 
     words =""
-    with open('/config.conf', 'r') as f:
+    with open('/var/www/html/test/gDating/config.conf', 'r') as f:
         data = f.readlines()
         for line in data:
             words = line.split()
