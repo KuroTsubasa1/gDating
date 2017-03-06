@@ -84,8 +84,12 @@ def executeSql(sql):
     with open(path+'/config.conf', 'r') as f:
         data = f.readlines()
         print(data)
+        i = 0
         for line in data:
             words = line.split(':')
+            print(i)
+            i = i + 1
+            print(len(words))
             #print("")
             #print("DEBUG: " + words)
             #print("")
