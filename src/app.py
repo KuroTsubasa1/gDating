@@ -78,9 +78,10 @@ def aa(json):
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
 
 def executeSql(sql):
-    print(os.getcwd()+'/config.conf')
+    print(os.path.dirname(os.path.abspath(__file__)))
+    path = os.path.dirname(os.path.abspath(__file__))
     words =""
-    with open(os.getcwd()+'config.conf', 'r') as f:
+    with open(path+'/config.conf', 'r') as f:
         data = f.readlines()
         print(data)
         for line in data:
