@@ -34,11 +34,11 @@
         <entry file="file://$PROJECT_DIR$/src/app.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="543">
-              <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+              <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
               <folding>
                 <element signature="e#0#23#0" expanded="true" />
-                <marker date="1488877569000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
-                <marker date="1488877569000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
+                <marker date="1488877672000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
+                <marker date="1488877672000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
               </folding>
             </state>
           </provider>
@@ -595,8 +595,8 @@
           <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="28" selection-end-column="13" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488877569000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
-            <marker date="1488877569000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
+            <marker date="1488877672000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
+            <marker date="1488877672000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
@@ -639,8 +639,8 @@
           <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488877569000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
-            <marker date="1488877569000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
+            <marker date="1488877672000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
+            <marker date="1488877672000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
@@ -732,11 +732,11 @@
     <entry file="file://$PROJECT_DIR$/src/app.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="543">
-          <caret line="110" column="32" selection-start-line="110" selection-start-column="32" selection-end-line="110" selection-end-column="32" />
+          <caret line="110" column="20" selection-start-line="110" selection-start-column="20" selection-end-line="110" selection-end-column="20" />
           <folding>
             <element signature="e#0#23#0" expanded="true" />
-            <marker date="1488877569000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
-            <marker date="1488877569000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
+            <marker date="1488877672000" expanded="true" signature="1108:1139" ph="INSERT INTO missing_value... " />
+            <marker date="1488877672000" expanded="true" signature="1192:1223" ph="INSERT INTO missing_value... " />
           </folding>
         </state>
       </provider>
