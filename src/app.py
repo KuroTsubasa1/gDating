@@ -108,4 +108,4 @@ def num_apperances_of_tag(tag_name, html):
     return len(soup.find_all(tag_name))
 
 if __name__ == '__main__':
-    socketio.run(app)
+    socketio.run(app,port='80')

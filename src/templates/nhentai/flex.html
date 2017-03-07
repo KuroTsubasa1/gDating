@@ -104,14 +104,14 @@
                  test();
              }
              }
-        
+
         var srollHeight = 0;
         var interval;
         function scrollScreen() {
             srollHeight = srollHeight + 1;
             scroll(0,srollHeight);
         }
-        
+
         function onClickAutoScroll() {
             interval = setInterval(function(){scrollScreen()},10);
             console.log("test");
