@@ -56,9 +56,10 @@ def sqlTest():
 
     return render_template("sqlTest.html")
 
+
 # this should not be here but i am too lazy to move it
 @socketio.on('a')
-def aa(json):
+def aa(json, cRS):
     request = requests.get(json)
     content = request.content
     soup = BeautifulSoup(content, "html.parser")
@@ -74,7 +75,7 @@ def aa(json):
     pageNum = pageNum/2
     pageNum = pageNum - 3
     print(pageNum)
-    socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum})
+    socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum, 'cRS': cRS})
 
 def executeSql(sql):
 

@@ -64,15 +64,20 @@
 
         <div id="menuitem" class="menuitems"></div>
 
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.3.6/socket.io.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" charset="utf-8">
 
+        // public Random String for each user different
+        var clientRandomString = "";
+
+        // connects the webscket
         var socket = io.connect('http://' + document.domain + ':' + location.port);
          $(document).ready(function() {
             $('.fancybox').fancybox();
         });
 
+        // opens the helper fancybox
          function openFancyBox() {
               $.fancybox({
                 type: 'iframe',
@@ -80,33 +85,43 @@
             });
          }
 
+        // gets the URL from the textfield
         function test() {
-                var targetUrl = $(".con1-item3").val();
-                socket.emit('a', targetUrl);
+              clientRandomString = Math.random().toString(36).substring(7);
+              console.log(clientRandomString);
+              var targetUrl = $(".con1-item3").val();
+              socket.emit('a', targetUrl, clientRandomString);
             }
 
+            // waits for imgUrl event
             socket.on('imgUrl', function (test) {
-            console.log(test);
-            console.log(test.data);
-            console.log(test.pageFormat);
-            mangaId = test.data;
-            pageFormat = test.pageFormat;
-            pageNumber = test.pageNumber
-            generatePage(mangaId,pageFormat,pageNumber);
+            if(test.cRS == clientRandomString){
+              console.log(test);
+              console.log(test.data);
+              console.log(test.pageFormat);
+              mangaId = test.data;
+              pageFormat = test.pageFormat;
+              pageNumber = test.pageNumber
+              generatePage(mangaId,pageFormat,pageNumber);
+              }
         })
 
          socket.on('connect', function() {
-            console.log("test");
+            console.log("connected");
          });
 
+         // checks if something war written to the textfield
          function checkTextField(field) {
              if (field.value != '') {
                  test();
              }
              }
 
+        // public vars for the auto scroll
         var srollHeight = 0;
         var interval;
+
+        // scrolls the screen
         function scrollScreen() {
             srollHeight = srollHeight + 1;
             scroll(0,srollHeight);
@@ -128,7 +143,6 @@
         window.onscroll = function (e) {
             srollHeight = window.pageYOffset;
         }
-        console.log("wuzaaa");
 
     </script>
 
