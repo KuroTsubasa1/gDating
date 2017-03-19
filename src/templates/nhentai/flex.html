@@ -222,11 +222,13 @@
 
         function getRangeValue() {
           scrollSpeed = $("#myRange").val();
+          scrollSpeed = parseFloat(scrollSpeed);
         }
 
         // scrolls the screen
         function scrollScreen() {
             scrollHeight = scrollHeight + scrollSpeed;
+            console.log('scrollHeight: ' + scrollHeight);
             scroll(0,scrollHeight);
         }
 
