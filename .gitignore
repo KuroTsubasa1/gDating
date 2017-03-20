@@ -1,2 +1,6 @@
 
 src/config.conf
+.*
+!/.gitignore
+!/.git/
+
