@@ -132,6 +132,19 @@ background-color:  #f15478;
   color: #fff;
 }
 
+.con1-item9
+{
+  position: fixed;
+  right: -50px;
+  bottom: 220px;
+  background-color: #ed2553;
+  height:100px;
+  width: 10px;
+  border-radius: 100%;
+  border: 0;
+  color: #fff;
+}
+
 .con1-item6:hover
 {
 background-color:  #f15478;
@@ -176,4 +189,11 @@ background-color:  #f15478;
 
 .hidden{
   visibility: hidden;
+}
+
+#myRange
+{
+  -webkit-appearance: slider-vertical;
+  writing-mode: bt-lr;
+  orient="vertical";
 }
