@@ -8,6 +8,20 @@ var GE = 8;
 var KO = 8;
 var KK = 8;
 
+$( document ).ready(function() {
+  $('#mu-counter').text(MU);
+})
+
+$('#mu-counter-up').on('click', function() {
+    MU = MU + 1;
+    $('#mu-counter').text(MU);
+})
+
+$('#mu-counter-down').on('click', function() {
+    MU = MU - 1;
+    $('#mu-counter').text(MU);
+})
+
 function onClickUnerfahren() {
     var LevelId = "1";
     showLevel(LevelId);
