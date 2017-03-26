@@ -32,7 +32,6 @@ function showGender(answerP11) {
     $('#displayAnswer1').val(answerP11);
 }
 
-<<<<<<< Updated upstream
 function deterLep(gwLep,KO) {
     return gwLep + (KO*2);
 }
@@ -65,8 +64,6 @@ function deterZK(gwZK,KO,KK) {
     return ((KO+KO+KK)/6) + gwZK;
 }
 
-
-=======
 var fruits = ['Parameter1', 'Parameter2', 'Parameter3'];
 var widget = new AutoComplete('search_bar', fruits);
 
@@ -76,4 +73,3 @@ var widget = new AutoComplete('search_bar', fruits);
     search_barTest = search_barTest[0][0].value;
     console.log(search_barTest);
   });
->>>>>>> Stashed changes
