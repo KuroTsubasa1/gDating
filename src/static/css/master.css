@@ -80,3 +80,22 @@ body
   background-color: #1f1f1f;
   color: #f15478;
 }
+
+.fa-plus-square{
+   /*color: #fff;*/
+   text-shadow: 1px 1px 1px #ccc;
+   font-size: 10.5em;
+}
+
+@media screen and (max-width: 1000px) {
+  .nav-ap
+    {
+      width:40vw;
+      color: #fff;
+    }
+}
+.nav-ap
+{
+  width: 20vw;
+  color: #000;
+}

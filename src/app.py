@@ -43,6 +43,10 @@ def register():
 def blog():
     return render_template("blog/blog.html")
 
+@app.route('/dsa')
+def dsaGen():
+    return render_template('dsaGen.html')
+
 @app.route('/sqlTest')
 def sqlTest():
 
