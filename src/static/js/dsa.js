@@ -31,3 +31,37 @@ function onClickLast() {
 function showGender(answerP11) {
     $('#displayAnswer1').val(answerP11);
 }
+
+function deterLep(gwLep,KO) {
+    return gwLep + (KO*2);
+}
+
+function deterAusw(GE){
+return GE/2;
+}
+
+function deterIni(MU,GE){
+return (MU+GE)/2;
+}
+
+// Gibt den Astralpunktewert an, braucht die Leiteigenschaft der Zauberertradition an
+function deterAsp(LE) {
+    return 20+LE;
+}
+
+// Gibt den Karmawert an, braucht die Leiteigenschaft der Geweihtentradition
+function deterKsp(LE) {
+    return 20+LE;
+}
+
+// Berechnet die Seelenkraft aus Grundwert der Spezies für Seelenkraft, Mut, Klugheit, Intuition
+function deterSK(gwSK,MU,KL,IN) {
+    return (MU+KL+IN/6)+ gwSK;
+}
+
+// Berechnet die Zähigkeit aus Grundwert der Spezies für Zähigkeit, Kondition, Körperkraft
+function deterZK(gwZK,KO,KK) {
+    return ((KO+KO+KK)/6) + gwZK;
+}
+
+
