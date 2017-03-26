@@ -7,22 +7,79 @@ var FF = 8;
 var GE = 8;
 var KO = 8;
 var KK = 8;
-var CharLevel;
+var CharLevel = 0;
 
+function getCounterLimits() {
+  var CharLevel = getLevel();
+  var lowerLimit = 8;
+  var upperLimit = 0;
+  switch (CharLevel) {
+
+    case 1:
+      upperLimit = 12;
+      break;
+
+    case 2:
+      upperLimit = 13;
+      break;
+
+    case 3:
+      upperLimit = 14;
+      break;
+
+    case 4:
+      upperLimit = 15;
+      break;
+
+    case 5:
+      upperLimit = 16;
+      break;
+
+    case 6:
+      upperLimit = 17;
+      break;
+
+    case 7:
+      upperLimit = 18;
+      break;
+  }
+
+  var limits = [
+    upperLimit,
+    lowerLimit
+  ];
+  return limits;
+}
 
 $( document ).ready(function() {
-  $('#mu-counter').text(MU);
+  $('#panel-mu-val').text(MU);
 })
 
 $('#mu-counter-up').on('click', function() {
-    MU = MU + 1;
-    $('#mu-counter').text(MU);
-})
+    limits = getCounterLimits();
+    var upper = limits[0];
+    var lower = limits[1];
+    console.log(lower);
+    console.log(upper);
+    if (MU < upper) {
+      MU = MU + 1;
+      console.log(MU);
+      $('#panel-mu-val').text(MU);
+    }
+});
 
 $('#mu-counter-down').on('click', function() {
+  limits = getCounterLimits();
+  var upper = limits[0];
+  var lower = limits[1];
+  console.log(lower);
+  console.log(upper);
+  if (MU > lower) {
     MU = MU - 1;
-    $('#mu-counter').text(MU);
-})
+    console.log(MU);
+    $('#panel-mu-val').text(MU);
+  }
+});
 
 function onClickUnerfahren() {
     var LevelId = "1";
