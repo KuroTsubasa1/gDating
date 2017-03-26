@@ -7,6 +7,8 @@ var FF = 8;
 var GE = 8;
 var KO = 8;
 var KK = 8;
+var CharLevel;
+
 
 $( document ).ready(function() {
   $('#mu-counter').text(MU);
@@ -24,37 +26,48 @@ $('#mu-counter-down').on('click', function() {
 
 function onClickUnerfahren() {
     var LevelId = "1";
+    CharLevel = 1;
     showLevel(LevelId);
 }
 
 function onClickDurchschnitt() {
     var LevelId = "2";
+    CharLevel = 2;
     showLevel(LevelId);
 }
 
 function onClickErfahren() {
     var LevelId = "3";
+    CharLevel = 3;
     showLevel(LevelId);
 }
 
 function onClickKompetent() {
-    var LevelId = "4"
+    var LevelId = "4";
+    CharLevel = 4;
     showLevel(LevelId)
 }
 
 function onClickMeister() {
-    var LevelId = "5"
+    var LevelId = "5";
+    CharLevel = 5;
     showLevel(LevelId)
 }
 
 function onClickBilliant() {
-    var LevelId = "6"
+    var LevelId = "6";
+    CharLevel = 6;
     showLevel(LevelId)
 }
 
 function onClickLegend() {
-    var LevelId = "7"
+    var LevelId = "7";
+    CharLevel = 7;
     showLevel(LevelId)
+}
+
+function getLevel() {
+    return CharLevel;
 }
 
 function showLevel(LevelId) {
