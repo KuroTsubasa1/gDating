@@ -3,7 +3,7 @@ var charakter = {
     name:"",
     family:"",
     birthday:"",
-    species:"",
+    species:{name:"Mensch",LeP:5,SK:-5,ZK:-5,GS:8,trait:"Eine beliebige Eigeschaft +1",ApCosts:0},
     haircolor:"",
     culture:"",
     title:"",
@@ -36,7 +36,7 @@ var charakter = {
     evasion:0,
     initiative:0,
     speed:0,
-    destinyPoints:3,
+    destinyPoints:3
 };
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -396,6 +396,40 @@ function onClickLegend() {
     showLevel(LevelId)
 }
 
+function onClickHuman() {
+    var species = "Mensch";
+    setSpecies(species,5,-5,-5,8,"Eine beliebige Eigenschaft +1",0);
+    showSpecies(species);
+}
+function onClickElf() {
+    var species = "Elf";
+    setSpecies(species,2,-4,-6,8,"IN und GE +1 und KL oder KK -2",18);
+    showSpecies(species);
+}
+function onClickHalfelf() {
+    var species = "Halbelf";
+    setSpecies(species,5,-4,-6,8,"Eine beliebige Eigenschaft +1",0);
+    showSpecies(species);
+}
+function onClickDwarf() {
+    var species = "Zwerg";
+    setSpecies(species,8,-4,-4,6,"KO und KK +1; CH oder GE -2",61);
+    showSpecies(species);
+}
+function showSpecies(species){
+     $('#displayspecies').val(species);
+}
+
+function setSpecies(name,lep,sk,zk,gs,trait,apcost) {
+charakter.species.name = name;
+charakter.species.LeP = lep;
+charakter.species.SK = sk;
+charakter.species.ZK = zk;
+charakter.species.GS = gs;
+charakter.species.trait = trait;
+charakter.species.ApCosts = apcost;
+}
+
 function getLevel() {
     return charakter.experienceLevel;
 }
@@ -443,12 +477,12 @@ function deterIni(charakter.MU, charakter.GE) {
 
 // Gibt den Astralpunktewert an, braucht die Leiteigenschaft der Zauberertradition an
 function deterAsp(charakter.LE) {
-    return 20 + charakter.LE;
+    return 20 + charakter.astralEnergie;
 }
 
 // Gibt den Karmawert an, braucht die Leiteigenschaft der Geweihtentradition
 function deterKsp(charakter.LE) {
-    return 20 + charakter.LE;
+    return 20 + charakter.karmaEnergie;
 }
 
 // Berechnet die Seelenkraft aus Grundwert der Spezies für Seelenkraft, Mut, Klugheit, Intuition

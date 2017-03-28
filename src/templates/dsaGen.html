@@ -97,7 +97,29 @@
                 </div>
             </div>
         </div>
-
+        <div class="container-fluid">
+            <div class="col-lg-6">
+                <div class="form-group">
+                    <div class="input-group">
+                        <div class="input-group-btn">
+                            <button id="btn-specieschoice" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Spezies <span class="caret"></span></button>
+                            <ul class="dropdown-menu">
+                                <li onclick="onClickHuman()"><a>Mensch</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li onclick="onClickElf()"><a>Elf</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li onclick="onClickHalfelf()"><a>Halbelf</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li onclick="onClickDwarf()"><a>Zwerg</a></li>
+                            </ul>
+                        </div>
+                        <!-- /btn-group -->
+                        <input type="text" class="form-control" id="displayspecies" disabled>
+                    </div>
+                    <!-- /input-group -->
+                </div>
+            </div>
+        </div>
         <div class="col-lg-2">
             <div class="panel panel-default">
                 <div class="panel-heading">
