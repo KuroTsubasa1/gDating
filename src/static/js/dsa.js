@@ -504,3 +504,7 @@ $('#showVal').on('click', function () {
     search_barTest = search_barTest[0][0].value;
     console.log(search_barTest);
 });
+
+$.getJSON("DropboxContent.json", function(json) {
+    console.log(json); // this will show the info it in firebug console
+});
