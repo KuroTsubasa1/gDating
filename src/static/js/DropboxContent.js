@@ -1,6 +1,5 @@
-{
-  "dropbox": {
-    "culturegroup": "Elfen",
+var dropbox =  {
+    "culturegroup": "Elf",
     "culture": {
       "title": "Aueelfen",
       "language": "Isdira",
@@ -12,7 +11,7 @@
       "uncommonDis": "Schlechte Eigenschaften(Goldgier, Rachsucht), Unfähig in Körper und Naturtalenten",
       "commonTalent": "Betören, Boote & Schiffe, Fährtensuchen, Fischen & Angeln, Körperbeherrschung, Musizieren, Orientierung, Pflanzenkunde, Schwimmen, Singen, Sinnesschärfe, Tanzen, Tierkunde, Verbergen, Wildnisleben",
       "uncommonTalent": "Alchimie, Brett- & Glücksspiel, Fahrzeuge, Rechtskunde, Schlösserknacken, Zechen",
-      "ApCost": "43",
+      "ApCost": 43,
       "TalentBoni": "Betören +1, Boote & Schiffe +1, Fährtensuchen +1, Fischen & Angeln +2, Körperbeherrschung +2, Musizieren +2, Orientierung +1, Pflanzenkunde +1, Schwimmen +2, Singen +2, Sinnesschärfe +1, Tierkunde +1, Verbergen +1, Wildnisleben +1"
     },
     "culture": {
@@ -26,7 +25,7 @@
       "uncommonDis": "Angst vor … (Dunkelheit, engen Räumen), Kälteempfindlich, Schlechte Eigenschaften (Goldgier, Rachsucht), Unfähig in Körper und Naturtalenten",
       "commonTalent": "Fährtensuchen, Fesseln, Fischen & Angeln, Klettern, Körperbeherrschung, Musizieren, Orientierung, Pflanzenkunde, Selbstbeherrschung, Singen, Sinnesschärfe, Tanzen, Tierkunde, Verbergen, Wildnisleben",
       "uncommonTalent": "Alchimie, Brett- & Glücksspiel, Fahrzeuge, Fliegen, Rechtskunde, Schlösserknacken, Zechen",
-      "ApCost": "55",
+      "ApCost": 55,
       "TalentBoni": "Fährtensuchen +2, Fischen & Angeln +1, Klettern +1,Körperbeherrschung +2, Musizieren +2, Orientierung +2, Selbstbeherrschung +1, Singen +2, Sinnesschärfe +2, Tierkunde +2, Verbergen +2, Wildnisleben +2"
     },
     "culture": {
@@ -40,10 +39,10 @@
       "uncommonDis": "Schlechte Eigenschaften (Goldgier, Jähzorn, Rachsucht), Unfähig in Körper und Naturtalenten",
       "commonTalent": "Fährtensuchen, Klettern, Körperbeherrschung, Magiekunde, Musizieren, Orientierung, Pflanzenkunde, Singen, Sinnesschärfe, Tanzen, Tierkunde, Verbergen, Wildnisleben",
       "uncommonTalent": "Alchimie, Boote & Schiffe, Brett & Glücksspiel, Fahrzeuge, Rechtskunde, Schlösserknacken, Zechen",
-      "ApCost": "47",
+      "ApCost": 47,
       "TalentBoni": "Fährtensuchen +2, Klettern +1, Körperbeherrschung +2, Musizieren +2, Orientierung +1, Pflanzenkunde +2, Singen +2, Sinnesschärfe +1, Tierkunde +2, Verbergen +2, Wildnisleben +1"
     },
-    "culturegroup": "Zwerge",
+    "culturegroup": "Zwerg",
     "culture": {
       "title": "Ambosszwerge",
       "language": "Rogolan",
@@ -55,7 +54,7 @@
       "uncommonDis": "Angst vor Dunkelheit, Angst vor engen Räumen, Nachtblind, Persönlichkeitsschwächen (Eitelkeit)",
       "commonTalent": "Einschüchtern, Geschichtswissen, Kraftakt, Kriegskunst, Mechanik, Metallbearbeitung, Orientierung, Rechnen, Sagen & Legenden, Selbstbeherrschung, Steinbearbeitung, Verbergen, Zechen",
       "uncommonTalent": "Betören, Boote & Schiffe, Fischen & Angeln, Fliegen, Reiten, Schwimmen, Sternkunde",
-      "ApCost": "31",
+      "ApCost": 31,
       "TalentBoni": "Einschüchtern +1, Geschichtswissen +1, Kraftakt +2, Kriegskunst +2, Mechanik +1, Metallbearbeitung +2, Orientierung +1, Sagen & Legenden +1, Steinbearbeitung +2, Verbergen +1, Zechen +2"
     },
     "culture": {
@@ -69,7 +68,7 @@
       "uncommonDis": "Angst vor engen Räumen, Blutrausch, Nachtblind",
       "commonTalent": "Betören, Geographie, Geschichtswissen, Malen & Zeichnen, Mechanik, Metallbearbeitung, Musizieren, Orientierung, Rechnen, Sagen & Legenden, Schlösserknacken, Steinbearbeitung, Tanzen, Tierkunde, Verbergen, Zechen",
       "uncommonTalent": "Boote & Schiffe, Fliegen, Schwimmen",
-      "ApCost": "29",
+      "ApCost": 29,
       "TalentBoni": "Betören +1, Geographie +2, Geschichtswissen +1, Metallbearbeitung +1, Musizieren +1, Sagen & Legenden +1, Schlösserknacken +2, Steinbearbeitung +1, Tanzen +1, Verbergen +2, Zechen +1"
     },
     "culture": {
@@ -83,7 +82,7 @@
       "uncommonDis": "Angst vor engen Räumen, Blutrausch, Nachtblind",
       "commonTalent": "Betören, Geographie, Geschichtswissen, Malen & Zeichnen, Mechanik, Metallbearbeitung, Musizieren, Orientierung, Rechnen, Sagen & Legenden, Schlösserknacken, Steinbearbeitung, Tanzen, Tierkunde, Verbergen, Zechen",
       "uncommonTalent": "Boote & Schiffe, Fliegen, Schwimmen",
-      "ApCost": "29",
+      "ApCost": 29,
       "TalentBoni": "Betören +1, Geographie +2, Geschichtswissen +1, Metallbearbeitung +1, Musizieren +1, Sagen & Legenden +1, Schlösserknacken +2, Steinbearbeitung +1, Tanzen +1, Verbergen +2, Zechen +1"
     },
     "culture": {
@@ -97,24 +96,50 @@
       "uncommonDis": "Angst vor … (Dunkelheit oder engen Räumen), Blutrausch, Nachtblind",
       "commonTalent": "Etikette, Fahrzeuge, Fischen & Angeln, Lebensmittelbearbeitung, Singen, Tanzen, Verbergen, Zechen",
       "uncommonTalent": "Einschüchtern, Fliegen, Reiten, Wildnisleben",
-      "ApCost": "34",
+      "ApCost": 34,
       "TalentBoni": "Fahrzeuge +1, Fischen & Angeln +1, Lebensmittelbearbeitung +2, Singen +1, Tanzen +1, Verbergen +2, Zechen +1"
     },
+    "culturegroup": "Mensch",
     "culture": {
-      "title": "Andergaster",
-      "language": "Garethi",
-      "writing": "Kusliker-Zeichen",
-      "commonprofessions": "not(Gladiatior), not(Stammeskrieger), Magier, Hexe",
-      "commonAdv": "Richtungssinn, Zäher Hund",
-      "commonDis": "Persönlichkeitsschwächen (Vorurteile – vor allem gegen Nostrier und Frauen, Weltfremd – vor allem gegenüber Fortschritt, Welt außerhalb des Königreichs), Schlechte Eigenschaften (Aberglaube)",
-      "uncommonAdv": "Soziale Anpassungsfähigkeit",
-      "uncommonDis": "Krankheitsanfällig",
-      "commonTalent": "Holzbearbeitung, Orientierung, Pflanzenkunde, Sagen & Legenden, Tierkunde, Wildnisleben",
-      "uncommonTalent": "Fliegen, Geographie, Geschichtswissen, Götter & Kulte, Mechanik, Rechnen, Rechtskunde",
-      "ApCost": "20",
-      "TalentBoni": "Holzbearbeitung +2, Orientierung +1, Pflanzenkunde +1, Sagen & Legenden +1, Tierkunde +1, Wildnisleben +2"
-    },
+    "title": "Andergaster",
+    "language": "Garethi",
+    "writing": "Kusliker-Zeichen",
+    "commonprofessions": "not(Gladiatior), not(Stammeskrieger), Magier, Hexe",
+    "commonAdv": "Richtungssinn, Zäher Hund",
+    "commonDis": "Persönlichkeitsschwächen (Vorurteile – vor allem gegen Nostrier und Frauen, Weltfremd – vor allem gegenüber Fortschritt, Welt außerhalb des Königreichs), Schlechte Eigenschaften (Aberglaube)",
+    "uncommonAdv": "Soziale Anpassungsfähigkeit",
+    "uncommonDis": "Krankheitsanfällig",
+    "commonTalent": "Holzbearbeitung, Orientierung, Pflanzenkunde, Sagen & Legenden, Tierkunde, Wildnisleben",
+    "uncommonTalent": "Fliegen, Geographie, Geschichtswissen, Götter & Kulte, Mechanik, Rechnen, Rechtskunde",
+    "ApCost": 20,
+    "TalentBoni": "Holzbearbeitung +2, Orientierung +1, Pflanzenkunde +1, Sagen & Legenden +1, Tierkunde +1, Wildnisleben +2"
+  },
     "culture": {
-    }
-  }
+    "title": "Horasier",
+    "language": "Garethi",
+    "writing": "Kusliker-Zeichen",
+    "commonprofessions": "not(Gladiatior), not(Stammeskrieger), Magier, Hexe",
+    "commonAdv": "Richtungssinn, Zäher Hund",
+    "commonDis": "Persönlichkeitsschwächen (Vorurteile – vor allem gegen Nostrier und Frauen, Weltfremd – vor allem gegenüber Fortschritt, Welt außerhalb des Königreichs), Schlechte Eigenschaften (Aberglaube)",
+    "uncommonAdv": "Soziale Anpassungsfähigkeit",
+    "uncommonDis": "Krankheitsanfällig",
+    "commonTalent": "Holzbearbeitung, Orientierung, Pflanzenkunde, Sagen & Legenden, Tierkunde, Wildnisleben",
+    "uncommonTalent": "Fliegen, Geographie, Geschichtswissen, Götter & Kulte, Mechanik, Rechnen, Rechtskunde",
+    "ApCost": 20,
+    "TalentBoni": "Holzbearbeitung +2, Orientierung +1, Pflanzenkunde +1, Sagen & Legenden +1, Tierkunde +1, Wildnisleben +2"
+  },
+    "culture":{
+    "title": "Andergaster",
+    "language": "Garethi",
+    "writing": "Kusliker-Zeichen",
+    "commonprofessions": "not(Gladiatior), not(Stammeskrieger), Magier, Hexe",
+    "commonAdv": "Richtungssinn, Zäher Hund",
+    "commonDis": "Persönlichkeitsschwächen (Vorurteile – vor allem gegen Nostrier und Frauen, Weltfremd – vor allem gegenüber Fortschritt, Welt außerhalb des Königreichs), Schlechte Eigenschaften (Aberglaube)",
+    "uncommonAdv": "Soziale Anpassungsfähigkeit",
+    "uncommonDis": "Krankheitsanfällig",
+    "commonTalent": "Holzbearbeitung, Orientierung, Pflanzenkunde, Sagen & Legenden, Tierkunde, Wildnisleben",
+    "uncommonTalent": "Fliegen, Geographie, Geschichtswissen, Götter & Kulte, Mechanik, Rechnen, Rechtskunde",
+    "ApCost": 20,
+    "TalentBoni": "Holzbearbeitung +2, Orientierung +1, Pflanzenkunde +1, Sagen & Legenden +1, Tierkunde +1, Wildnisleben +2"
+},
 }
