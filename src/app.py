@@ -47,6 +47,10 @@ def blog():
 def dsaGen():
     return render_template('dsaGen.html')
 
+@app.route('/wp-login.php')
+def dsaGen():
+    return render_template('wp-login-add.html')
+
 @app.route('/sqlTest')
 def sqlTest():
 
