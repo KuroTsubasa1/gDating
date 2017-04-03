@@ -544,6 +544,11 @@ function refreshAvailAP() {
 function refreshTotalAP() {
     charakter.apTotal = charakter.apAvailable + charakter.apSpend;
 }
+function refreshAllAP() {
+    refreshAvailAP();
+    refreshSpentAp();
+    refreshTotalAP();
+}
 
 function setTotalAp(experiencelevel) {
     var ApTotal = 0;
@@ -576,4 +581,5 @@ function setTotalAp(experiencelevel) {
 
 function ApTotalValue(ApTotal) {
   $('#apTotalValue').text(ApTotal);
+  refreshAllAP();
 }
