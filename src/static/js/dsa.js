@@ -515,7 +515,7 @@ function deterIni(MU, GE) {
  */
 // Berechnet die Seelenkraft aus Grundwert der Spezies für Seelenkraft, Mut, Klugheit, Intuition
 function deterSK(gwSK, MU, KL, IN) {
-    return (MU + KL + IN / 6) + gwSK;
+    return ((MU + KL + IN) / 6) + gwSK;
 }
 
 // Berechnet die Zähigkeit aus Grundwert der Spezies für Zähigkeit, Kondition, Körperkraft
