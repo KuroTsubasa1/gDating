@@ -103,6 +103,7 @@ $(document).ready(function () {
     $('#ge-val').text(charakter.GE);
     $('#ko-val').text(charakter.KO);
     $('#kk-val').text(charakter.KK);
+    $('#apTotalValue').text("0");
 })
 
 // counts +1 to the text value of the MU box
@@ -545,7 +546,7 @@ function refreshTotalAP() {
 }
 
 function setTotalAp(experiencelevel) {
-    var ApTotal = "0";
+    var ApTotal = 0;
     switch (experiencelevel) {
         case "1":
             ApTotal = 1100;
@@ -570,5 +571,9 @@ function setTotalAp(experiencelevel) {
             break;
     }
     charakter.apTotal = ApTotal;
-    $('#ApTotalValue').val(ApTotal);
+    ApTotalValue(ApTotal);
+}
+
+function ApTotalValue(ApTotal) {
+  $('#apTotalValue').text(ApTotal);
 }
