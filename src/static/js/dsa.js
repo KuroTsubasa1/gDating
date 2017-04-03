@@ -467,20 +467,42 @@ function showLevel(LevelId) {
     setTotalAp(LevelId);
     $('#displayAnswer1').val(LevelText);
 }
+function deterBasisValues() {
+    charakter.lifeEnergie = deterLep(charakter.species.LeP, charakter.KO);
+    charakter.evasion = deterAusw(charakter.GE);
+    charakter.SK = deterSK(charakter.species.SK, charakter.MU, charakter.KL, charakter.IN);
+    charakter.ZK = deterZK(charakter.species.ZK, charakter.KO, charakter.KK);
+    charakter.initiative = deterIni(charakter.MU, charakter.GE);
+    charakter.speed = charakter.species.speed;
+    showBasicValues();
+}
 
+function showBasicValues() {
+    $('#lep-val').text(charakter.lifeEnergie);
+    $('#sk-val').text(charakter.SK|0);
+    $('#zk-val').text(charakter.ZK|0);
+    $('#aw-val').text(charakter.evasion|0);
+    $('#gw-val').text(charakter.speed);
+    $('#init-val').text(charakter.initiative|0);
+}
+
+
+$('#calc-values-btn').click(function () {
+    deterBasisValues()
+});
+
+function deterLep(gwLep, KO) {
+    return gwLep + (KO * 2);
+}
+
+function deterAusw(geschick) {
+    return geschick / 2;
+}
+
+function deterIni(MU, GE) {
+    return (MU + GE) / 2;
+}
 /*
- function deterLep(gwLep, charakter.KO) {
- return gwLep + (charakter.KO * 2);
- }
-
- function deterAusw(charakter.GE) {
- return charakter.GE / 2;
- }
-
- function deterIni(charakter.MU, charakter.GE) {
- return (charakter.MU + charakter.GE) / 2;
- }
-
  // Gibt den Astralpunktewert an, braucht die Leiteigenschaft der Zauberertradition an
  function deterAsp(charakter.LE) {
  return 20 + charakter.astralEnergie;
@@ -490,17 +512,17 @@ function showLevel(LevelId) {
  function deterKsp(charakter.LE) {
  return 20 + charakter.karmaEnergie;
  }
-
- // Berechnet die Seelenkraft aus Grundwert der Spezies für Seelenkraft, Mut, Klugheit, Intuition
- function deterSK(gwSK, charakter.MU, charakter.KL, charakter.IN) {
- return (charakter.MU + charakter.KL + charakter.IN / 6) + gwSK;
- }
-
- // Berechnet die Zähigkeit aus Grundwert der Spezies für Zähigkeit, Kondition, Körperkraft
- function deterZK(gwZK, charakter.KO, charakter.KK) {
- return ((charakter.KO + charakter.KO + charakter.KK) / 6) + gwZK;
- }
  */
+// Berechnet die Seelenkraft aus Grundwert der Spezies für Seelenkraft, Mut, Klugheit, Intuition
+function deterSK(gwSK, MU, KL, IN) {
+    return (MU + KL + IN / 6) + gwSK;
+}
+
+// Berechnet die Zähigkeit aus Grundwert der Spezies für Zähigkeit, Kondition, Körperkraft
+function deterZK(gwZK, KO, KK) {
+    return ((KO + KO + KK) / 6) + gwZK;
+}
+
 var fruits = ['Parameter1', 'Parameter2', 'Parameter3'];
 var widget = new AutoComplete('search_bar', fruits);
 
@@ -580,6 +602,6 @@ function setTotalAp(experiencelevel) {
 }
 
 function ApTotalValue(ApTotal) {
-  $('#apTotalValue').text(ApTotal);
-  refreshAllAP();
+    $('#apTotalValue').text(ApTotal);
+    refreshAllAP();
 }

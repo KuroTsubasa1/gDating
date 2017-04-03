@@ -74,364 +74,364 @@
     </div>
 </div>
 
-    <div class="container-fluid">
-        <div class="col-lg-6">
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button id="btn-experienceLevel" type="button" class="btn btn-default dropdown-toggle"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Erfahrungsgrad <span
-                                class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li onclick="onClickUnerfahren()"><a>Unerfahren</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickDurchschnitt()"><a>Durchschnittlich</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickErfahren()"><a>Erfahren</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickKompetent()"><a>Kompetent</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickMeister()"><a>Meisterlich</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickBilliant()"><a>Brilliant</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickLegend()"><a>Legendär</a></li>
-                        </ul>
-                    </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control" id="displayAnswer1" disabled>
+<div class="container-fluid">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button id="btn-experienceLevel" type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Erfahrungsgrad <span
+                            class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li onclick="onClickUnerfahren()"><a>Unerfahren</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickDurchschnitt()"><a>Durchschnittlich</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickErfahren()"><a>Erfahren</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickKompetent()"><a>Kompetent</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickMeister()"><a>Meisterlich</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickBilliant()"><a>Brilliant</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickLegend()"><a>Legendär</a></li>
+                    </ul>
                 </div>
-                <!-- /input-group -->
+                <!-- /btn-group -->
+                <input type="text" class="form-control" id="displayAnswer1" disabled>
+            </div>
+            <!-- /input-group -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-6">
+        <div class="form-group">
+            <div class="input-group">
+                <div class="input-group-btn">
+                    <button id="btn-specieschoice" type="button" class="btn btn-default dropdown-toggle"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Spezies <span
+                            class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                        <li onclick="onClickHuman()"><a>Mensch</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickElf()"><a>Elf</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickHalfelf()"><a>Halbelf</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li onclick="onClickDwarf()"><a>Zwerg</a></li>
+                    </ul>
+                </div>
+                <!-- /btn-group -->
+                <input type="text" class="form-control" id="displayspecies" disabled>
+            </div>
+            <!-- /input-group -->
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">MU</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-mu-val">
+                <i id="mu-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="mu-val" class=""></div>
+                <i id="mu-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-        <div class="col-lg-6">
-            <div class="form-group">
-                <div class="input-group">
-                    <div class="input-group-btn">
-                        <button id="btn-specieschoice" type="button" class="btn btn-default dropdown-toggle"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Spezies <span
-                                class="caret"></span></button>
-                        <ul class="dropdown-menu">
-                            <li onclick="onClickHuman()"><a>Mensch</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickElf()"><a>Elf</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickHalfelf()"><a>Halbelf</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li onclick="onClickDwarf()"><a>Zwerg</a></li>
-                        </ul>
-                    </div>
-                    <!-- /btn-group -->
-                    <input type="text" class="form-control" id="displayspecies" disabled>
-                </div>
-                <!-- /input-group -->
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">KL</h3>
+            </div>
+            <div class="panel-body text-center text-center" id="panel-kl-val">
+                <i id="kl-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="kl-val" class=""></div>
+                <i id="kl-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
             </div>
         </div>
     </div>
 
-    <div class="container-fluid">
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">MU</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-mu-val">
-                        <i id="mu-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="mu-val" class=""></div>
-                        <i id="mu-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">IN</h3>
             </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">KL</h3>
-                    </div>
-                    <div class="panel-body text-center text-center" id="panel-kl-val">
-                        <i id="kl-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="kl-val" class=""></div>
-                        <i id="kl-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">IN</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-in-val">
-                        <i id="in-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="in-val" class=""></div>
-                        <i id="in-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">CH</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-ch-val">
-                        <i id="ch-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="ch-val" class=""></div>
-                        <i id="ch-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">FF</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-ff-val">
-                        <i id="ff-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="ff-val" class=""></div>
-                        <i id="ff-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">GE</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-ge-val">
-                        <i id="ge-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="ge-val" class=""></div>
-                        <i id="ge-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">KO</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-ko-val">
-                        <i id="ko-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="ko-val" class=""></div>
-                        <i id="ko-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-lg-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <h3 class="panel-title text-center">KK</h3>
-                    </div>
-                    <div class="panel-body text-center" id="panel-kk-val">
-                        <i id="kk-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
-                        <div id="kk-val" class=""></div>
-                        <i id="kk-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
-                    </div>
-                </div>
-            </div>
-      </div>
-
-                  <div class="container-fluid">
-                      <div class="col-lg-2">
-                          <div class="panel panel-default">
-                              <div class="panel-heading">
-                                  <h3 class="panel-title text-center">AP Gesamt</h3>
-                              </div>
-                              <div class="panel-body text-center" id="apTotalValue">
-                              </div>
-                          </div>
-                      </div>
-
-
-                  <div class="col-lg-2">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              <h3 class="panel-title text-center">AP Verfügbar</h3>
-                          </div>
-                          <div class="panel-body text-center" id="panel-kk-val">
-                              120
-                          </div>
-                      </div>
-                  </div>
-
-                  <div class="col-lg-2">
-                      <div class="panel panel-default">
-                          <div class="panel-heading">
-                              <h3 class="panel-title text-center">AP Ausgegeben</h3>
-                          </div>
-                          <div class="panel-body text-center" id="panel-kk-val">
-                              1100
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-
-      <div class="container-fluid">
-        <div class="col-lg-3">
-            <div class="form-group">
-                <input type="button" class="form-control btn btn-default" value="Basiswerte berechnen">
+            <div class="panel-body text-center" id="panel-in-val">
+                <i id="in-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="in-val" class=""></div>
+                <i id="in-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
             </div>
         </div>
-      </div>
+    </div>
 
-        <div class="container-fluid">
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">LeP</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-lep-val">
-                            <div id="lep-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">AsP</h3>
-                        </div>
-                        <div class="panel-body text-center text-center" id="panel-asp-val">
-                            <div id="asp-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">KaP</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-kap-val">
-                            <div id="kap-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">SK</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-sk-val">
-                            <div id="sk-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">ZK</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-zk-val">
-                            <div id="zk-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">AW</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-aw-val">
-                            <div id="aw-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">Init</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-init-val">
-                            <div id="init-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-1">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title text-center">GW</h3>
-                        </div>
-                        <div class="panel-body text-center" id="panel-gw-val">
-                            <div id="gw-val" class=""></div>
-                        </div>
-                    </div>
-                </div>
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">CH</h3>
             </div>
-
-            <div class="container-fluid">
-                <div class="page-header">
-                    <h1> Persönliche Daten
-                        <small></small>
-                    </h1>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" id="" placeholder="">
-                        <p class="help-block">Help text here.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" id="" placeholder="">
-                        <p class="help-block">Help text here.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" id="" placeholder="">
-                        <p class="help-block">Help text here.</p>
-                    </div>
-                </div>
-
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for=""></label>
-                        <input type="text" class="form-control" id="" placeholder="">
-                        <p class="help-block">Help text here.</p>
-                    </div>
-                </div>
+            <div class="panel-body text-center" id="panel-ch-val">
+                <i id="ch-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="ch-val" class=""></div>
+                <i id="ch-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
             </div>
+        </div>
+    </div>
 
-
-            <div class="container-fluid">
-                <div class="col-md-6">
-                    <div id="search_bar">
-                        <div class="autocomplete-container-7a26d">
-                            <div class="placeholder-d722a"></div>
-                            <div class="tokens-6a7a0"></div>
-                            <input type="text" class="input-1">
-                            <div class="clear-53545"></div>
-                            <ul class="dropdown-a3d44" style="display:none"></ul>
-                        </div>
-                        <span class="input-width-proxy-1c13e" style="position:absolute; top:-9999px;"></span></div>
-                </div>
-                <div class="col-md-6">
-                    <div class="form-group">
-                        <input id="showVal" type="button" class=" btn btn-default form-control" id=""
-                               value="Value to Log">
-                    </div>
-                </div>
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">FF</h3>
             </div>
+            <div class="panel-body text-center" id="panel-ff-val">
+                <i id="ff-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="ff-val" class=""></div>
+                <i id="ff-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">GE</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-ge-val">
+                <i id="ge-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="ge-val" class=""></div>
+                <i id="ge-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">KO</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-ko-val">
+                <i id="ko-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="ko-val" class=""></div>
+                <i id="ko-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">KK</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-kk-val">
+                <i id="kk-counter-up" class="fa fa-chevron-circle-up text-left" aria-hidden="true"></i>
+                <div id="kk-val" class=""></div>
+                <i id="kk-counter-down" class="fa fa-chevron-circle-down text-right" aria-hidden="true"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">AP Gesamt</h3>
+            </div>
+            <div class="panel-body text-center" id="apTotalValue">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-lg-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">AP Verfügbar</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-kk-val">
+                120
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-2">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">AP Ausgegeben</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-kk-val">
+                1100
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="col-lg-3">
+        <div class="form-group">
+            <input type="button" class="form-control btn btn-default" value="Basiswerte berechnen" id="calc-values-btn">
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">LeP</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-lep-val">
+                <div id="lep-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">AsP</h3>
+            </div>
+            <div class="panel-body text-center text-center" id="panel-asp-val">
+                <div id="asp-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">KaP</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-kap-val">
+                <div id="kap-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">SK</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-sk-val">
+                <div id="sk-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">ZK</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-zk-val">
+                <div id="zk-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">AW</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-aw-val">
+                <div id="aw-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">Init</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-init-val">
+                <div id="init-val" class=""></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-lg-1">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title text-center">GW</h3>
+            </div>
+            <div class="panel-body text-center" id="panel-gw-val">
+                <div id="gw-val" class=""></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="page-header">
+        <h1> Persönliche Daten
+            <small></small>
+        </h1>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" class="form-control" id="" placeholder="">
+            <p class="help-block">Help text here.</p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" class="form-control" id="" placeholder="">
+            <p class="help-block">Help text here.</p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" class="form-control" id="" placeholder="">
+            <p class="help-block">Help text here.</p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="form-group">
+            <label for=""></label>
+            <input type="text" class="form-control" id="" placeholder="">
+            <p class="help-block">Help text here.</p>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid">
+    <div class="col-md-6">
+        <div id="search_bar">
+            <div class="autocomplete-container-7a26d">
+                <div class="placeholder-d722a"></div>
+                <div class="tokens-6a7a0"></div>
+                <input type="text" class="input-1">
+                <div class="clear-53545"></div>
+                <ul class="dropdown-a3d44" style="display:none"></ul>
+            </div>
+            <span class="input-width-proxy-1c13e" style="position:absolute; top:-9999px;"></span></div>
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <input id="showVal" type="button" class=" btn btn-default form-control" id=""
+                   value="Value to Log">
+        </div>
+    </div>
+</div>
 
 
 <script src="../static/js/ninja.js"></script>
