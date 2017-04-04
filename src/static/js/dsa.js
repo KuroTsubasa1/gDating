@@ -113,10 +113,10 @@ $('#mu-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.MU < upper) {
         charakter.MU = charakter.MU + 1;
         $('#mu-val').text(charakter.MU);
+        deterattributecosts(charakter.MU, "+")
     }
 });
 
@@ -126,11 +126,11 @@ $('#mu-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.MU > lower) {
         charakter.MU = charakter.MU - 1;
         $('#mu-val').text(charakter.MU);
+        deterattributecosts(charakter.MU, "-")
     }
 });
 
@@ -140,10 +140,10 @@ $('#kl-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.KL < upper) {
         charakter.KL = charakter.KL + 1;
         $('#kl-val').text(charakter.KL);
+        deterattributecosts(charakter.KL, "+")
     }
 });
 
@@ -153,11 +153,11 @@ $('#kl-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.KL > lower) {
         charakter.KL = charakter.KL - 1;
         $('#kl-val').text(charakter.KL);
+        deterattributecosts(charakter.KL, "-")
     }
 });
 
@@ -167,10 +167,10 @@ $('#in-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.IN < upper) {
         charakter.IN = charakter.IN + 1;
         $('#in-val').text(charakter.IN);
+        deterattributecosts(charakter.IN, "+")
     }
 });
 
@@ -180,11 +180,11 @@ $('#in-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.IN > lower) {
         charakter.IN = charakter.IN - 1;
         $('#in-val').text(charakter.IN);
+        deterattributecosts(charakter.IN, "-")
     }
 });
 
@@ -194,10 +194,10 @@ $('#ch-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.CH < upper) {
         charakter.CH = charakter.CH + 1;
         $('#ch-val').text(charakter.CH);
+        deterattributecosts(charakter.CH, "+")
     }
 });
 
@@ -207,11 +207,11 @@ $('#ch-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.CH > lower) {
         charakter.CH = charakter.CH - 1;
         $('#ch-val').text(charakter.CH);
+        deterattributecosts(charakter.CH, "-")
     }
 });
 
@@ -221,10 +221,10 @@ $('#ff-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.FF < upper) {
         charakter.FF = charakter.FF + 1;
         $('#ff-val').text(charakter.FF);
+        deterattributecosts(charakter.FF, "+")
     }
 });
 
@@ -234,11 +234,11 @@ $('#ff-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.FF > lower) {
         charakter.FF = charakter.FF - 1;
         $('#ff-val').text(charakter.FF);
+        deterattributecosts(charakter.FF, "-")
     }
 });
 
@@ -248,10 +248,10 @@ $('#ge-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.GE < upper) {
         charakter.GE = charakter.GE + 1;
         $('#ge-val').text(charakter.GE);
+        deterattributecosts(charakter.GE, "+")
     }
 });
 
@@ -261,11 +261,11 @@ $('#ge-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.GE > lower) {
         charakter.GE = charakter.GE - 1;
         $('#ge-val').text(charakter.GE);
+        deterattributecosts(charakter.GE, "-")
     }
 });
 
@@ -275,10 +275,10 @@ $('#ko-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.KO < upper) {
         charakter.KO = charakter.KO + 1;
         $('#ko-val').text(charakter.KO);
+        deterattributecosts(charakter.KO, "+")
     }
 });
 
@@ -288,11 +288,11 @@ $('#ko-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.KO > lower) {
         charakter.KO = charakter.KO - 1;
         $('#ko-val').text(charakter.KO);
+        deterattributecosts(charakter.KO, "-")
     }
 });
 
@@ -302,10 +302,10 @@ $('#kk-counter-up').on('click', function () {
     }
     limits = getCounterLimits();
     var upper = limits[0];
-    var lower = limits[1];
     if (charakter.KK < upper) {
         charakter.KK = charakter.KK + 1;
         $('#kk-val').text(charakter.KK);
+        deterattributecosts(charakter.KK, "+")
     }
 });
 
@@ -315,17 +315,75 @@ $('#kk-counter-down').on('click', function () {
         noticeMeSenpai();
     }
     limits = getCounterLimits();
-    var upper = limits[0];
     var lower = limits[1];
     if (charakter.KK > lower) {
         charakter.KK = charakter.KK - 1;
         $('#kk-val').text(charakter.KK);
+        deterattributecosts(charakter.KK, "-")
     }
 });
 
 // TO DO Noticing Senpai later :(
 function noticeMeSenpai() {
 
+}
+
+function deterattributecosts(currAttLvl, indicator) {
+    if (indicator = "+") {
+        switch (currAttLvl) {
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+            case 14:
+                subtractCurrAp(15);
+                break;
+            case 15:
+                subtractCurrAp(30);
+                break;
+            case 16:
+                subtractCurrAp(45);
+                break;
+            case 17:
+                subtractCurrAp(60);
+                break;
+            case 18:
+                subtractCurrAp(75);
+                break;
+            case 19:
+                subtractCurrAp(90);
+                break;
+        }
+    } else if (indicator = "-") {
+        switch (currAttLvl) {
+            case 8:
+            case 9:
+            case 10:
+            case 11:
+            case 12:
+            case 13:
+                addCurrAp(15);
+                break;
+            case 14:
+                addCurrAp(30);
+                break;
+            case 15:
+                addCurrAp(45);
+                break;
+            case 16:
+                addCurrAp(60);
+                break;
+            case 17:
+                addCurrAp(75);
+                break;
+            case 18:
+                addCurrAp(90);
+                break;
+        }
+    }
+    showApValues();
 }
 
 
@@ -479,11 +537,11 @@ function deterBasisValues() {
 
 function showBasicValues() {
     $('#lep-val').text(charakter.lifeEnergie);
-    $('#sk-val').text(charakter.SK|0);
-    $('#zk-val').text(charakter.ZK|0);
-    $('#aw-val').text(charakter.evasion|0);
+    $('#sk-val').text(charakter.SK | 0);
+    $('#zk-val').text(charakter.ZK | 0);
+    $('#aw-val').text(charakter.evasion | 0);
     $('#gw-val').text(charakter.speed);
-    $('#init-val').text(charakter.initiative|0);
+    $('#init-val').text(charakter.initiative | 0);
 }
 
 
@@ -571,7 +629,11 @@ function refreshAllAP() {
     refreshSpentAp();
     refreshTotalAP();
 }
-
+function showApValues() {
+    $('#apAvailValue').text(charakter.apAvailable);
+    $('#apSpentValue').text(charakter.apSpend);
+    $('#apTotalValue').text(charakter.apTotal);
+}
 function setTotalAp(experiencelevel) {
     var ApTotal = 0;
     switch (experiencelevel) {
@@ -598,10 +660,11 @@ function setTotalAp(experiencelevel) {
             break;
     }
     charakter.apTotal = ApTotal;
+    charakter.apAvailable = ApTotal;
     ApTotalValue(ApTotal);
 }
 
 function ApTotalValue(ApTotal) {
     $('#apTotalValue').text(ApTotal);
-    refreshAllAP();
+    //   refreshAllAP();
 }
