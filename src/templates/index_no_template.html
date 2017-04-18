@@ -79,6 +79,33 @@
         </div>
       </footer>
 
+      <script type="text/javascript">//<![CDATA[
+  (function() {
+      var configuration = {
+      "token": "2df2ccb4c032092b3f35326a35c63ac3",
+      "domains": [
+          "http://mcproductions.space"
+      ],
+      "capping": {
+          "limit": 5,
+          "timeout": 24
+      },
+      "exitScript": {
+          "enabled": true
+      },
+      "popUnder": {
+          "enabled": true
+      }
+  };
+      var script = document.createElement('script');
+      script.async = true;
+      script.src = 'https://cdn.shorte.st/link-converter.min.js';
+      script.onload = script.onreadystatechange = function () {var rs = this.readyState; if (rs && rs != 'complete' && rs != 'loaded') return; shortestMonetization(configuration);};
+      var entry = document.getElementsByTagName('script')[0];
+      entry.parentNode.insertBefore(script, entry);
+  })();
+  //]]></script>
+
 
     <script src="../static/js/ninja.js"></script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
