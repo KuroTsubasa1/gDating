@@ -47,10 +47,13 @@ def blog():
 def dsaGen():
     return render_template('dsaGen.html')
 
-
 @app.route('/wp-login.php')
 def wplogin():
     return render_template('wp-login-add.html')
+
+@app.route('/noTanksAllowed')
+def noTaAlo():
+    return render_template('unity/index.html')
 
 @app.route('/sqlTest')
 def sqlTest():
