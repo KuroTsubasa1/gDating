@@ -55,6 +55,10 @@ def wplogin():
 def noTaAlo():
     return render_template('unity/index.html')
 
+@app.route('/lasseharm')
+def lasseharm():
+    return render_template('greeSquare/landing.html')
+
 @app.route('/sqlTest')
 def sqlTest():
 
