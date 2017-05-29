@@ -130,3 +130,64 @@ body
   overflow:hidden;
   text-align:center;
 }
+
+.frontpannel
+{
+  width: 100%;
+  height: 100vh;
+  background-color: #656D78;
+}
+
+.frontpannel-logo
+{
+  position: absolute;
+     top: 25%;
+     left: 50%;
+     transform: translate(-50%, 50%);
+}
+
+@media screen and (max-width: 1200px) {
+    .frontpannel-logo
+    {
+      width: 50%;
+      height: 50%;
+      transform: translate(-50%, 25%);
+    }
+}
+
+.menu
+{
+  width: 100%;
+  height: 70px;
+  background-color: #CCD1D9;
+  padding-top: 15px;
+}
+
+.arrow
+{
+  margin-top: 25vh;
+  padding: 10vh;
+}
+
+.site-indicator
+{
+top : 25vh;
+right: 0px;
+position: fixed;
+width: 30px;
+height: 50vh;
+background-color: #1b1b1b;
+}
+
+.blender
+{
+  width: 100%;
+  height: 100vh;
+  background-color: #AAB2BD;
+}
+
+.blender-logo
+{
+  width: 10%;
+  height: auto;
+}
