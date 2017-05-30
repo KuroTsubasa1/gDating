@@ -157,11 +157,12 @@ body
     }
 }
 
-@media screen and (max-height: 700px) and (max-width: 1200px) {
+@media screen and (max-height: 850px) and (max-width: 1200px) {
     .frontpannel-logo
     {
-      width: 40%;
-      height: 40%;
+      margin-top: 25vh;
+      width: 40vw;
+      height: 40vh;
       transform: translate(-50%, 25%);
     }
 }
