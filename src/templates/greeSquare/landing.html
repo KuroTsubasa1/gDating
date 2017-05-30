@@ -25,36 +25,36 @@
 
 <body>
 
-<div class="site-indicator">
+  <div class="site-indicator">
     <img id="page-indicator-1" class="circle img-responsive" src="../../static/img/circleActive.png" alt="">
     <img id="page-indicator-2" class="circle img-responsive" src="../../static/img/circle.png" alt="">
     <img id="page-indicator-3" class="circle img-responsive" src="../../static/img/circle.png" alt="">
     <img id="page-indicator-4" class="circle img-responsive" src="../../static/img/circle.png" alt="">
     <img id="page-indicator-5" class="circle img-responsive" src="../../static/img/circle.png" alt="">
-</div>
+  </div>
 
   <div id="page1" class="frontpannel">
     <div class="menu">
       <div class="container">
-        <div class="col-xs-3">
+        <div class="col-md-2">
           <div class="form-group">
             <input id="btn-art" type="button" class="form-control btn btn-default" value="3D Artworks">
           </div>
         </div>
 
-        <div class="col-xs-3">
+        <div class="col-md-2">
           <div class="form-group">
             <input id="btn-game" type="button" class="form-control btn btn-default" value="Game/Demos">
           </div>
         </div>
 
-        <div class="col-xs-3">
+        <div class="col-md-2">
           <div class="form-group">
             <input id="btn-web" type="button" class="form-control btn btn-default" value="Web Developement">
           </div>
         </div>
 
-        <div class="col-xs-3">
+        <div class="col-md-2">
           <div class="form-group">
             <input id="btn-mob" type="button" class="form-control btn btn-default" value="Mobile Developement">
           </div>
@@ -64,7 +64,7 @@
 
     <div class="container">
       <div class="col-lg-4"></div>
-      <div class="col-lg-4"><img class="img-responsive frontpannel-logo" src="../../static/img/frontlogo2.png" alt="">  <img class="img-responsive frontpannel-logo arrow" src="../../static/img/arrow.png" alt=""></div>
+      <div class="col-lg-4"><img class="img-responsive frontpannel-logo" src="../../static/img/frontlogo2.png" alt=""> <img class="img-responsive frontpannel-logo arrow" src="../../static/img/arrow.png" alt=""></div>
       <div class="col-lg-4"></div>
     </div>
   </div>
@@ -80,25 +80,25 @@
 
   <div id="page3" class="games">
     <div class="container">
-    <div class="page-header">
-        <h1>Games & Demos <small></small></h1>
-    </div>
+      <div class="page-header">
+        <h1> <small>Games & Demos</small></h1>
+      </div>
     </div>
   </div>
 
   <div id="page4" class="web-dev">
     <div class="container">
-    <div class="page-header">
-      <h1>Web Developement <small></small></h1>
-    </div>
+      <div class="page-header">
+        <h1> <small>Web Developement</small></h1>
+      </div>
     </div>
   </div>
 
   <div id="page5" class="mobile-dev">
     <div class="container">
-    <div class="page-header">
-      <h1>Mobile Developement <small></small></h1>
-    </div>
+      <div class="page-header">
+        <h1> <small>Mobile Developement</small></h1>
+      </div>
     </div>
   </div>
 
@@ -109,120 +109,135 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
   <script type="text/javascript">
-    // var screenHeight = $(window).height();
-    // var page2 = screenHeight * 2;
-    // var page3 = screenHeight * 3;
-    // var page4 = screenHeight * 4;
-    //
-    // currentScroll = $().scrollTop()
-    //
-    // if (currentScroll < screenHeight) {
-    //   $("#page-indicator-1").attr('src', '../../static/img/circle.png');
-    // }
-    // else if(currentScroll < page2 && currentScroll > screenHeight){
-    //     $("#page-indicator-2").attr('src', '../../static/img/circleActive.png');
-    // }
-    // else if(currentScroll < page3 && currentScroll > page2){
-    //     $("#page-indicator-2").attr('src', '../../static/img/circle.png');
-    //     $("#page-indicator-3").attr('src', '../../static/img/circleActive.png');
-    // }
-    // else if(currentScroll < page4 && currentScroll > page3){
-    //     $("#page-indicator-3").attr('src', '../../static/img/circle.png');
-    //     $("#page-indicator-4").attr('src', '../../static/img/circleActive.png');
-    // }
 
-//     jQuery(function($) {
-//     $('#page1').on('scroll', function() {
-//         console.log("hier3");
-//         if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-//             $("#page-indicator-1").attr('src', '../../static/img/circle.png');
-//             $("#page-indicator-2").attr('src', '../../static/img/circleActive.png');
-//             console.log("hier");
-//         }
-//     })
-// });
-//
-// jQuery(function($) {
-// $('#page2').on('scroll', function() {
-//     if($(this).scrollTop() + $(this).innerHeight() >= $(this)[0].scrollHeight) {
-//       $("#page-indicator-2").attr('src', '../../static/img/circle.png');
-//       $("#page-indicator-3").attr('src', '../../static/img/circleActive.png');
-//       console.log("hier2");
-//     }
-// })
-// });
+  // ------------------------------------------------------
+  // site-indicator logic
+  // ------------------------------------------------------
 
-$(window).scroll(function() {
-   var hT = $('#page1').offset().top,
-       hH = $('#page1').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-                 $("#page-indicator-1").attr('src', '../../static/img/circle.png');
-                 $("#page-indicator-2").attr('src', '../../static/img/circleActive.png');
-                 console.log("hier");
-   }
-});
+    $(window).scroll(function() {
+      var hT = $('#page1').offset().top,
+        hH = $('#page1').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        $("#page-indicator-1").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-2").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
 
-$(window).scroll(function() {
-   var hT = $('#page2').offset().top,
-       hH = $('#page2').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-                 $("#page-indicator-2").attr('src', '../../static/img/circle.png');
-                 $("#page-indicator-3").attr('src', '../../static/img/circleActive.png');
-                 console.log("hier");
-   }
-});
+    $(window).scroll(function() {
+      var hT = $('#page2').offset().top,
+        hH = $('#page2').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        $("#page-indicator-2").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-3").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
 
-$(window).scroll(function() {
-   var hT = $('#page3').offset().top,
-       hH = $('#page3').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-                 $("#page-indicator-3").attr('src', '../../static/img/circle.png');
-                 $("#page-indicator-4").attr('src', '../../static/img/circleActive.png');
-                 console.log("hier");
-   }
-});
+    $(window).scroll(function() {
+      var hT = $('#page3').offset().top,
+        hH = $('#page3').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        $("#page-indicator-3").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-4").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
 
-$(window).scroll(function() {
-   var hT = $('#page4').offset().top,
-       hH = $('#page4').outerHeight(),
-       wH = $(window).height(),
-       wS = $(this).scrollTop();
-   if (wS > (hT+hH-wH)){
-                 $("#page-indicator-4").attr('src', '../../static/img/circle.png');
-                 $("#page-indicator-5").attr('src', '../../static/img/circleActive.png');
-                 console.log("hier");
-   }
-});
+    $(window).scroll(function() {
+      var hT = $('#page4').offset().top,
+        hH = $('#page4').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        $("#page-indicator-4").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-5").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
 
-$('#btn-art').click(function() {
-  $('html, body').animate({
+    $(window).scroll(function() {
+      var hT = $('#page4').offset().top,
+        hH = $('#page4').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS < (hT + hH - wH)) {
+        $("#page-indicator-5").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-4").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
+
+    $(window).scroll(function() {
+      var hT = $('#page3').offset().top,
+        hH = $('#page3').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS < (hT + hH - wH)) {
+        $("#page-indicator-4").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-3").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
+
+    $(window).scroll(function() {
+      var hT = $('#page2').offset().top,
+        hH = $('#page2').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS < (hT + hH - wH)) {
+        $("#page-indicator-3").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-2").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
+
+    $(window).scroll(function() {
+      var hT = $('#page1').offset().top,
+        hH = $('#page1').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS < (hT + hH - wH)) {
+        $("#page-indicator-2").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-1").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
+
+
+    // ------------------------------------------------------
+    // top menu logic
+    // ------------------------------------------------------
+
+    $('#btn-art').click(function() {
+      $('html, body').animate({
         scrollTop: $("#page2").offset().top
-    }, 2000);
-});
+      }, 2000);
+    });
 
-$('#btn-game').click(function() {
-  $('html, body').animate({
+    $('#btn-game').click(function() {
+      $('html, body').animate({
         scrollTop: $("#page3").offset().top
-    }, 2000);
-});
+      }, 2000);
+    });
 
-$('#btn-web').click(function() {
-  $('html, body').animate({
+    $('#btn-web').click(function() {
+      $('html, body').animate({
         scrollTop: $("#page4").offset().top
-    }, 2000);
-});
+      }, 2000);
+    });
 
-$('#btn-mob').click(function() {
-  $('html, body').animate({
+    $('#btn-mob').click(function() {
+      $('html, body').animate({
         scrollTop: $("#page5").offset().top
-    }, 2000);
-});
+      }, 2000);
+    });
   </script>
 </body>
 
