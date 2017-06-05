@@ -56,7 +56,7 @@ def noTaAlo():
     return render_template('unity/index.html')
 
 @app.route('/noTanksAllowed')
-def noTaAlo():
+def collab():
     return render_template('unity/collab/index.html')
 
 @app.route('/lasseharm')
