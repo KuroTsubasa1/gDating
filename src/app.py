@@ -55,7 +55,7 @@ def wplogin():
 def noTaAlo():
     return render_template('unity/index.html')
 
-@app.route('/noTanksAllowed')
+@app.route('/blender_dc_collab')
 def collab():
     return render_template('unity/collab/index.html')
 
