@@ -31,6 +31,7 @@
     <img id="page-indicator-3" class="circle img-responsive" src="../../static/img/circle.png" alt="">
     <img id="page-indicator-4" class="circle img-responsive" src="../../static/img/circle.png" alt="">
     <img id="page-indicator-5" class="circle img-responsive" src="../../static/img/circle.png" alt="">
+    <img id="page-indicator-6" class="circle img-responsive" src="../../static/img/circle.png" alt="">
   </div>
 
   <div id="page1" class="frontpannel">
@@ -116,43 +117,59 @@
     <div class="container">
       <div class="col-lg-4"></div>
       <div class="col-lg-4">
-        <img class="img-responsive img-circle frontpannel-logo shadow-3" src="../../static/img/mola.png" alt="">
+        <img class="img-responsive img-circle frontpannel-logo shadow-3" src="../../static/img/newLogo.png" alt="">
         <img class="img-responsive frontpannel-logo" src="../../static/img/lasse.png" alt="">
       </div>
       <div class="col-lg-4"></div>
     </div>
   </div>
 
-  <div id="page2" class="blender">
+
+
+
+  <div id="page3" class="blender">
     <div class="container">
       <div class="page-header">
         <h1><img class="blender-logo" src="../../static/img/blenderLogo.png" alt=""><small> 3D Artworks</small></h1>
       </div>
-
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="lead">Software</p>
+          </div>
+        </div>
+      </div>
 
 
     </div>
   </div>
 
 
-  <div id="page3" class="games">
+  <div id="page4" class="games">
     <div class="container">
       <div class="page-header">
         <h1> <small>Games & Demos</small></h1>
       </div>
       <div class="container">
-        <div class="col-md-6">
-          <p class="lead">Current Projects</p>
-        </div>
+        <div class="row">
 
-        <div class="col-md-6">
-          <p class="lead">Futur Projects </p>
+          <div class="col-md-4">
+            <p class="lead">Past Projects</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="lead">Current Projects</p>
+          </div>
+
+          <div class="col-md-4">
+            <p class="lead">Futur Projects</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 
-  <div id="page4" class="web-dev">
+  <div id="page5" class="web-dev">
     <div class="container">
       <div class="page-header">
         <h1> <small>Web Developement</small></h1>
@@ -160,7 +177,7 @@
     </div>
   </div>
 
-  <div id="page5" class="mobile-dev">
+  <div id="page6" class="mobile-dev">
     <div class="container">
       <div class="page-header">
         <h1> <small>Mobile Developement</small></h1>
@@ -171,7 +188,7 @@
   <div class="footer">
     <div class="container">
       <div class="clearfix">
-        <div class="footer-logo"><a href="#"><img src="img/footer-logo.png">Lasse Harm</a></div>
+        <div class="footer-logo"><a href="#"><img src="../../static/img/footerLogo.png">Lasse Harm</a></div>
         <dl class="footer-nav">
           <dt class="nav-title">PORTFOLIO</dt>
           <dd class="nav-item"><a href="#">Web Design</a></dd>
@@ -188,8 +205,8 @@
         </dl>
         <dl class="footer-nav">
           <dt class="nav-title">GALLERY</dt>
-          <dd class="nav-item"><a href="#">Flickr</a></dd>
-          <dd class="nav-item"><a href="#">Picasa</a></dd>
+          <dd class="nav-item"><a href="#">DeviantArt</a></dd>
+          <dd class="nav-item"><a href="#">ArtStation</a></dd>
           <dd class="nav-item"><a href="#">iStockPhoto</a></dd>
           <dd class="nav-item"><a href="#">PhotoDune</a></dd>
         </dl>
@@ -257,6 +274,30 @@
         wS = $(this).scrollTop();
       if (wS > (hT + hH - wH)) {
         $("#page-indicator-4").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-5").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
+
+    $(window).scroll(function() {
+      var hT = $('#page5').offset().top,
+        hH = $('#page5').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS > (hT + hH - wH)) {
+        $("#page-indicator-5").attr('src', '../../static/img/circle.png');
+        $("#page-indicator-6").attr('src', '../../static/img/circleActive.png');
+        console.log("hier");
+      }
+    });
+
+    $(window).scroll(function() {
+      var hT = $('#page5').offset().top,
+        hH = $('#page5').outerHeight(),
+        wH = $(window).height(),
+        wS = $(this).scrollTop();
+      if (wS < (hT + hH - wH)) {
+        $("#page-indicator-6").attr('src', '../../static/img/circle.png');
         $("#page-indicator-5").attr('src', '../../static/img/circleActive.png');
         console.log("hier");
       }
