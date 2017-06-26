@@ -17,10 +17,8 @@ socketio = SocketIO(app)
 #index page
 @app.route('/')
 def hello_world():
-    print('')
-    print('test')
-    print('')
-    return render_template("index_no_template.html")
+    #return render_template("index_no_template.html")
+    return render_template("greeSquare/landing.html")
 
 # index page of gdatind (ht)
 @app.route('/gdating/')
