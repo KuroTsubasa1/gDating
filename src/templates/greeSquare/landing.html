@@ -39,11 +39,11 @@
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-5">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                      </button>
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">Lasse Harm</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -134,23 +134,84 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <p class="lead">Software</p>
-              I create most of my 3D artwork in Blender.
+            <p class="lead">Bleder</p>
+
           </div>
         </div>
         <div class="row">
-          <div class="col-md-6"></div>
-          <div class="col-md-3"></div>
-          <div class="col-sm-6 col-md-3">
-              <div class="thumbnail">
-                <img class="img-rounded" src="img/thumbnail-1.jpg">
-                <div class="caption text-center">
-                  <h3>Thumbnail label</h3>
-                  <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id ...</p>
-                  <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
-                </div>
+          <div class="col-md-6">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/797425.jpg">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
               </div>
             </div>
+          </div>
+          <div class="col-md-3">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/robot.gif">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/16299076_10155006657734320_1053023615110305558_n.png">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/8635134_orig.jpg">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/7587342_orig.jpg">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/9170259_orig.png">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6">
+            <div class="thumbnail">
+              <img class="img-rounded" src="../../static/img/lasseharm/6261393_orig.png">
+              <div class="caption text-center">
+                <h3>Master Ball</h3>
+                <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+                <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -159,13 +220,18 @@
     </div>
   </div>
 
-
   <div id="page4" class="games">
     <div class="container">
       <div class="page-header">
         <h1> <small>Games & Demos</small></h1>
       </div>
       <div class="container">
+
+        <div id="gameHere">
+          <div class="form-group">
+            <input id="gameBtn" type="button" class="btn btn-default form-control" value="Click to Play a Game">
+          </div>
+        </div>
         <div class="row">
 
           <div class="col-md-4">
@@ -394,6 +460,14 @@
         scrollTop: $("#page5").offset().top
       }, 2000);
     });
+  </script>
+
+  <script type="text/javascript">
+  $('#gameBtn').click(function() {
+    var string = '<div class="row"> <div class=" col-md-12"> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://lasseharm.space/blender_dc_collab"></iframe> </div> <!-- class="embed-responsive-item" --> </div> </div> <br> <div class="col-md-12"><div class="form-group"><input id="gameRemoveBtn" type="button" class="btn btn-default form-control" value="Stop the Game"></div></div> <scr' + 'ipt type="text/javascript"> $("#gameRemoveBtn").click(function() {$("#gameHere").html("");})</scr' + 'ipt>';
+    $('#gameHere').html(string);
+  });
+
   </script>
 </body>
 
