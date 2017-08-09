@@ -61,6 +61,10 @@ def collab():
 def lasseharm():
     return render_template('greeSquare/landing.html')
 
+@app.route('/google1a0ca61e6beca65d.html')
+def googleVerify():
+    return render_template('google1a0ca61e6beca65d.html')
+
 @app.route('/sqlTest')
 def sqlTest():
 
