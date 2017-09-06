@@ -65,7 +65,7 @@ def lasseharm():
 def googleVerify():
     return render_template('google1a0ca61e6beca65d.html')
 
-@app.route('/ics')
+@app.route('/test.ics')
 def testIcs():
     return render_template('test.ics')
 
