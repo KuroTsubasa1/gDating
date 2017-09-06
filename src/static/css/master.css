@@ -225,14 +225,14 @@ height: 20vh;
 .web-dev
 {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #AAB2BD;
 }
 
 .mobile-dev
 {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #656D78;
 }
 
@@ -242,4 +242,33 @@ height: 20vh;
 
 .hidden{
   visibility: hidden;
+}
+
+.sidebar{
+  margin-left: 0px;
+  min-height: 100%;
+  width: 30%;
+  background-color: #dddddd;
+  overflow-y: scroll;
+}
+
+.fill {
+    min-height: 100%;
+    height: 100%;
+    background-color: #dddddd;
+}
+
+.sidebar-card{
+  width: 100%;
+  height: auto;
+}
+
+.sidebar-title{
+font-size: 20px;
+padding-top: 10px;
+padding-left: 10px;
+}
+
+.sidebar-descr{
+padding-left: 10px;
 }

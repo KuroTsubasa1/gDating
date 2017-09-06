@@ -255,6 +255,51 @@
       <div class="page-header">
         <h1> <small>Web Developement</small></h1>
       </div>
+
+      <div class="row">
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img class="img-rounded" src="../../static/img/lasseharm/petprofi.png">
+            <div class="caption text-center">
+              <h3>PetProfi</h3>
+              <p>A forum, shop for Breeder, Animal Shelter and Vets</p>
+              <p><a href="https://www.petprofi.de" class="btn btn-warning" role="button">show me more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img class="img-rounded" src="../../static/img/lasseharm/dlrg.png">
+            <div class="caption text-center">
+              <h3>DLRG LoggingTool</h3>
+              <p>Timemanagement and record keeping for lifeguards</p>
+              <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img class="img-rounded" src="../../static/img/lasseharm/9170259_orig.png">
+            <div class="caption text-center">
+              <h3>Master Ball</h3>
+              <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+              <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3 col-md-3">
+          <div class="thumbnail">
+            <img class="img-rounded" src="../../static/img/lasseharm/6261393_orig.png">
+            <div class="caption text-center">
+              <h3>Master Ball</h3>
+              <p>Render by Lasse Harm, Original Concept by Shattered-Earth</p>
+              <p><a href="#" class="btn btn-warning" role="button">show me more</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     </div>
   </div>
 
@@ -463,8 +508,9 @@
   </script>
 
   <script type="text/javascript">
+
   $('#gameBtn').click(function() {
-    var string = '<div class="row"> <div class=" col-md-12"> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://lasseharm.space/blender_dc_collab"></iframe> </div> <!-- class="embed-responsive-item" --> </div> </div> <br> <div class="col-md-12"><div class="form-group"><input id="gameRemoveBtn" type="button" class="btn btn-default form-control" value="Stop the Game"></div></div> <scr' + 'ipt type="text/javascript"> $("#gameRemoveBtn").click(function() {$("#gameHere").html("");})</scr' + 'ipt>';
+    var string = '<div class="row"> <div class=" col-md-12"> <div class="embed-responsive embed-responsive-16by9"> <iframe class="embed-responsive-item" src="http://lasseharm.space/blender_dc_collab"></iframe> </div> <!-- class="embed-responsive-item" --> </div> </div> <br> <div class="col-md-12"><div class="form-group"><input id="gameRemoveBtn" type="button" class="btn btn-default form-control" value="Stop the Game"></div></div> <scr' + 'ipt type="text/javascript"> $("#gameRemoveBtn").click(function() {$("#gameHere").html(' + ' +"<div class="form-group"><input id="gameBtn" type="button" class="btn btn-default form-control" value="Click to Play a Game"></div>"' + ');})</scr' + 'ipt>';
     $('#gameHere').html(string);
   });
 

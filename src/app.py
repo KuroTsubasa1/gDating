@@ -65,6 +65,10 @@ def lasseharm():
 def googleVerify():
     return render_template('google1a0ca61e6beca65d.html')
 
+@app.route('/ics')
+def testIcs():
+    return render_template('test.ics')
+
 @app.route('/sqlTest')
 def sqlTest():
 
