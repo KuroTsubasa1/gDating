@@ -53,9 +53,13 @@ def wplogin():
 def noTaAlo():
     return render_template('unity/index.html')
 
-@app.route('/blender_dc_collab')
+@app.route('//blender-discord-collaboration-1')
 def collab():
     return render_template('unity/collab/index.html')
+
+@app.route('/blender-discord-collaboration-3')
+def collab3():
+    return render_template('readMeCollab3')
 
 @app.route('/lasseharm')
 def lasseharm():
