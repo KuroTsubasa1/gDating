@@ -59,7 +59,7 @@ def collab():
 
 @app.route('/blender-discord-collaboration-3')
 def collab3():
-    return render_template('readMeCollab3')
+    return render_template('readMeCollab3.html')
 
 @app.route('/lasseharm')
 def lasseharm():
