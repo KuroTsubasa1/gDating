@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 import mysql.connector
 from mysql.connector import errorcode
 import os
+from subprocess import call
 
 # init the flask server
 app = Flask(__name__)
@@ -72,6 +73,12 @@ def googleVerify():
 @app.route('/test.ics')
 def testIcs():
     return render_template('test.ics')
+
+@app.route('/updateSever')
+def updateSide():
+    call('gd')
+    call('ups')
+    return render_template('update.html')
 
 @app.route('/sqlTest')
 def sqlTest():
