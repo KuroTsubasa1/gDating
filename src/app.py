@@ -76,8 +76,10 @@ def testIcs():
 
 @app.route('/updateSever')
 def updateSide():
+    print('running remote update!')
     call('gd')
     call('ups')
+    print('finished remote update!')
     return render_template('update.html')
 
 @app.route('/sqlTest')
