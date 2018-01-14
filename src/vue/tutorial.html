@@ -17,9 +17,10 @@
   <body>
 
     <div id="root" class="well well-sm">
-
-      {{ names }}
-
+      <ul>
+        <li v-for="name in names" v-text="name"> {{ name }} </li>
+      </ul>
+    </div>
 
 
     <script src="https://unpkg.com/vue@2.5.13/dist/vue.js"> </script>

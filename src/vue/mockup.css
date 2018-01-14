@@ -10,7 +10,7 @@
 .base-right
 {
   background-color: #f0f0f0;
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 .card
@@ -108,4 +108,69 @@
 .bg-white
 {
   background-color: #ffffff !important;
+}
+
+.taskbar
+{
+  height: 50px;
+  width: 100%;
+  background-color: #5c5c5c;
+}
+
+.taskbar-margin-top{
+  margin-top: 7px;
+}
+
+.taskbar-margin-right{
+  margin-right: 10px;
+}
+
+.taskbar-margin-left{
+  margin-left: 10px;
+}
+
+.profPic{
+  width: 30px;
+  height: 30px;
+  background-image: url("ryver.png");
+  background-position: center;
+  background-size: 30px 30px;
+  border-radius: 100%;
+}
+
+
+#imaginary_container{
+width: 500px !important;
+}
+.stylish-input-group .input-group-addon{
+    background: white !important;
+
+}
+.stylish-input-group .form-control{
+	border-right:0;
+	box-shadow:0 0 0;
+	border-color:#ccc;
+}
+.stylish-input-group button{
+    border:0;
+    background:transparent;
+}
+
+.center-well{
+  width: 50vw;
+/*  height: 50vh; */
+height: auto;
+  margin-top: 25vh;
+  margin-left: 25vw;
+}
+
+.greyBox{
+  width: 100px;
+  height: 100px;
+  background-color: #dadada;
+}
+
+.logo{
+  background-image: url("ryver.png");
+  background-position: center;
 }
