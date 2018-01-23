@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, request
 from flask_socketio import SocketIO
 from flask import render_template
 import requests
@@ -8,6 +8,7 @@ import mysql.connector
 from mysql.connector import errorcode
 import os
 from subprocess import call
+
 
 # init the flask server
 app = Flask(__name__)
@@ -70,9 +71,9 @@ def lasseharm():
 def googleVerify():
     return render_template('google1a0ca61e6beca65d.html')
 
-@app.route('/test.ics')
+@app.route('/test')
 def testIcs():
-    return render_template('test.ics')
+    return render_template('test.html')
 
 @app.route('/updateSever')
 def updateSide():
@@ -82,12 +83,14 @@ def updateSide():
     print('finished remote update!')
     return render_template('update.html')
 
-@app.route('/sqlTest')
+@app.route('/sqlTest', methods=['POST'])
 def sqlTest():
 
     tableName = 'testTable'
     Fields = 'value'
-    Data = "'Lasse'"
+    Data = request.form['test_data']
+    Data = "'" + Data + "'"
+    print('Data: ' + Data)
     print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
     valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
 
@@ -133,12 +136,15 @@ def executeSql(sql):
                                   host=words[2],
                                   database=words[3])
     cursor = cnx.cursor()
+    cnx.autocommit = True
 
     # run sql
     print('sql: '+sql)
-    cursor.execute(sql)
+    cursor.execute(sql, multi=True)
+    #print(cursor.execute(sql))
 
     cnx.commit()
+#   print(cnx.commit())
 
     cursor.close()
     cnx.close()
