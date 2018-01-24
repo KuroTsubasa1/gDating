@@ -75,6 +75,10 @@ def googleVerify():
 def testIcs():
     return render_template('test.html')
 
+@app.route('/webSkt')
+def webSktTest():
+    return render_template('webSocketTest.html')
+
 @app.route('/updateSever')
 def updateSide():
     print('running remote update!')
@@ -97,7 +101,6 @@ def sqlTest():
     executeSql(valueData)
 
     return render_template("sqlTest.html")
-
 
 # this should not be here but i am too lazy to move it
 @socketio.on('a')
@@ -136,18 +139,65 @@ def executeSql(sql):
                                   host=words[2],
                                   database=words[3])
     cursor = cnx.cursor()
-    cnx.autocommit = True
 
     # run sql
     print('sql: '+sql)
-    cursor.execute(sql, multi=True)
-    #print(cursor.execute(sql))
+    cursor.execute(sql)
 
     cnx.commit()
-#   print(cnx.commit())
-
     cursor.close()
     cnx.close()
+
+
+clients = []
+
+
+@socketio.on('data')
+def printData(data):
+    print(data)
+
+@socketio.on('connect')
+def connect():
+    clients.append(request.namespace)
+    print(clients)
+
+
+@socketio.on('disconnect')
+def disconnect():
+    clients.remove(request.namespace)
+    print(clients)
+
+
+######################
+
+# userspace
+@app.route('/demo/login')
+def demoLogin():
+    return render_template('/vue/login.html')
+
+
+@app.route('/demo/register')
+def demoRegister():
+    return render_template('/vue/register.html')
+
+
+# api endpoints
+
+@app.route('/api/login', methods=['POST'])
+def apiLogin():
+    return render_template('/vue/login.html')
+
+
+@app.route('/api/register', methods=['POST', 'GET'])
+def apiRegister():
+    username = request.form['username']
+    password = request.form['password']
+    passwordConf =  request.form['passwordConfirm']
+    print(username)
+    print(password)
+    print(passwordConf)
+    return render_template('/vue/login.html')
+
 
 def num_apperances_of_tag(tag_name, html):
     soup = BeautifulSoup(html, "html.parser")

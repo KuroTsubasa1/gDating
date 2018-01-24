@@ -42,7 +42,7 @@
   background-color: black;
   margin-left: 10px;
 
-  background-image: url("ryver.png");
+  background-image: url("/static/img/demo/ryver.png");
   background-position: center;
   background-size: 50px 50px;
 }
@@ -132,7 +132,7 @@
 .profPic{
   width: 30px;
   height: 30px;
-  background-image: url("ryver.png");
+  background-image: url("/static/img/demo/ryver.png");
   background-position: center;
   background-size: 30px 30px;
   border-radius: 100%;
@@ -171,14 +171,14 @@ height: auto;
 }
 
 .logo{
-  background-image: url("ryver.png");
+  background-image: url("/static/img/demo/ryver.png");
   background-position: center;
 }
 
 .login-logo{
   width: 100px;
   height: 100px;
-  background-image: url("logo.png");
+  background-image: url("/static/img/demo/logo.png");
   background-position: center;
   background-size: 100px 100px;
   border-radius: 100%;
