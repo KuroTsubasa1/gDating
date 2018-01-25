@@ -1,4 +1,4 @@
-from flask import Flask, request
+from flask import Flask, request, session
 from flask_socketio import SocketIO
 from flask import render_template
 import requests
@@ -8,6 +8,12 @@ import mysql.connector
 from mysql.connector import errorcode
 import os
 from subprocess import call
+
+from passlib.handlers.pbkdf2 import pbkdf2_sha256
+
+from src.sql.sqlDao import *
+from src.registration.registrationDao import *
+
 
 
 # init the flask server
@@ -87,20 +93,22 @@ def updateSide():
     print('finished remote update!')
     return render_template('update.html')
 
-@app.route('/sqlTest', methods=['POST'])
-def sqlTest():
+#@app.route('/sqlTest', methods=['POST'])
+#def sqlTest():
+#
+#    tableName = 'testTable'
+#    Fields = 'value'
+#    Data = request.form['test_data']
+#    Data = "'" + Data + "'"
+#    print('Data: ' + Data)
+#    print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
+#    valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
+#
+#    executeSql(valueData)
+#
+#    return render_template("sqlTest.html")
 
-    tableName = 'testTable'
-    Fields = 'value'
-    Data = request.form['test_data']
-    Data = "'" + Data + "'"
-    print('Data: ' + Data)
-    print("INSERT INTO {} ({}) VALUES ({})".format(tableName, Fields, Data))
-    valueData = ("INSERT INTO {} ({}) VALUES ({})").format(tableName, Fields, Data)
 
-    executeSql(valueData)
-
-    return render_template("sqlTest.html")
 
 # this should not be here but i am too lazy to move it
 @socketio.on('a')
@@ -121,32 +129,6 @@ def aa(json, cRS):
     pageNum = pageNum - 3
     print(pageNum)
     socketio.emit('imgUrl', {'data': id[4], 'pageFormat': imgFormart[1], 'pageNumber': pageNum, 'cRS': cRS})
-
-def executeSql(sql):
-
-    # read config.conf for sql server
-    path = os.path.dirname(os.path.abspath(__file__))
-    words =""
-    with open(path+'/config.conf', 'r') as f:
-        data = f.readlines()
-        print(data)
-        i = 0
-        for line in data:
-            words = line.split(':')
-
-    # connecting to db
-    cnx = mysql.connector.connect(user=words[0], password=words[1],
-                                  host=words[2],
-                                  database=words[3])
-    cursor = cnx.cursor()
-
-    # run sql
-    print('sql: '+sql)
-    cursor.execute(sql)
-
-    cnx.commit()
-    cursor.close()
-    cnx.close()
 
 
 clients = []
@@ -183,19 +165,31 @@ def demoRegister():
 
 # api endpoints
 
+
+
+
 @app.route('/api/login', methods=['POST'])
 def apiLogin():
-    return render_template('/vue/login.html')
+    validUser = False
+    username = request.form['username']
+    password = request.form['password']
+
+    validUser = validateUser(username, password)
+
+    if validUser == True:
+        return render_template('/vue/dashboard.html')
+#        return render_template('/vue/dashboard.html', username=session['username'])
+    else:
+        return  render_template('/vue/login.html')
 
 
-@app.route('/api/register', methods=['POST', 'GET'])
+@app.route('/api/register', methods=['POST'])
 def apiRegister():
     username = request.form['username']
     password = request.form['password']
-    passwordConf =  request.form['passwordConfirm']
     print(username)
     print(password)
-    print(passwordConf)
+    registerUser(username, password)
     return render_template('/vue/login.html')
 
 

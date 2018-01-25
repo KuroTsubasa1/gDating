@@ -24,17 +24,17 @@
 
     <div class="well well-sm center-well">
 
-      <form class="" action="/api/login" method="post">
+      <form class="" action="/api/login" id="loginForm" method="post">
         <div class="form-group">
           <div class="login-logo center-horizontal top-margin"></div>
           <p class="lead center top-margin">SnipShare</p>
           <label for="username">Username</label>
-          <input type="text" class="form-control" id="username" placeholder="">
+          <input type="text" class="form-control" name="username" id="username" placeholder="">
           <br>
           <label for="password">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="">
+          <input type="password" class="form-control"  name="password" id="password" placeholder="">
           <br>
-          <input type="button" class="btn btn-default form-control" id="submit" value="Login" placeholder="">
+          <input type="submit" class="btn btn-default form-control" id="submit" value="Login" placeholder="">
           <br>
           <p>Not registered yet ? <a href="/demo/register">Click here </a></p>
         </div>
