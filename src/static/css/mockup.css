@@ -185,5 +185,37 @@ height: auto;
 }
 
 #bg-login{
-  background-color: #FDFDFD;;
+  background-color: #FDFDFD;
+}
+
+
+.bg-animation{
+  background: linear-gradient(50deg, #1e91d6, #0072bb, #8fc93a, #e4cc37, #e18335);
+  background-size: 1000% 1000%;
+
+  -webkit-animation: AnimationName 11s ease infinite;
+  -moz-animation: AnimationName 11s ease infinite;
+  -o-animation: AnimationName 11s ease infinite;
+  animation: AnimationName 11s ease infinite;
+
+  @-webkit-keyframes AnimationName {
+      0%{background-position:0% 17%}
+      50%{background-position:100% 84%}
+      100%{background-position:0% 17%}
+  }
+  @-moz-keyframes AnimationName {
+      0%{background-position:0% 17%}
+      50%{background-position:100% 84%}
+      100%{background-position:0% 17%}
+  }
+  @-o-keyframes AnimationName {
+      0%{background-position:0% 17%}
+      50%{background-position:100% 84%}
+      100%{background-position:0% 17%}
+  }
+  @keyframes AnimationName {
+      0%{background-position:0% 17%}
+      50%{background-position:100% 84%}
+      100%{background-position:0% 17%}
+  }
 }

@@ -165,9 +165,6 @@ def demoRegister():
 
 # api endpoints
 
-
-
-
 @app.route('/api/login', methods=['POST'])
 def apiLogin():
     validUser = False
@@ -191,6 +188,15 @@ def apiRegister():
     print(password)
     registerUser(username, password)
     return render_template('/vue/login.html')
+
+
+
+# ajax from server
+@app.route('/some-url')
+def get_data():
+    testVar = 'testVar'
+    testNumber = 10
+    return render_template('greeSquare/landing.html', testVar=testVar, testNumber=testNumber)
 
 
 def num_apperances_of_tag(tag_name, html):
